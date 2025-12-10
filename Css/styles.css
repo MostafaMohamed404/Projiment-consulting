@@ -1,0 +1,60 @@
+
+/* Bootstrap Container equivalent in Tailwind custom CSS */
+.container-bs {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;   /* px-4 */
+  padding-right: 1rem;  /* px-4 */
+}
+
+/* sm: 540px */
+@media (min-width: 640px) {
+  .container-bs {
+    max-width: 540px;
+  }
+}
+
+/* md: 720px */
+@media (min-width: 768px) {
+  .container-bs {
+    max-width: 720px;
+  }
+}
+
+/* lg: 960px */
+@media (min-width: 1024px) {
+  .container-bs {
+    max-width: 960px;
+  }
+}
+
+/* xl: 1140px */
+@media (min-width: 1280px) {
+  .container-bs {
+    max-width: 1140px;
+  }
+}
+
+/* 2xl: 1320px */
+@media (min-width: 1536px) {
+  .container-bs {
+    max-width: 1320px;
+  }
+}
+
+/* Bootstrap .container-fluid equivalent */
+
+.container-fluid-bs {
+  width: 100%;
+  padding-left: 1rem;   /* px-4 */
+  padding-right: 1rem;  /* px-4 */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+.service-details {
+  display: none;
+}

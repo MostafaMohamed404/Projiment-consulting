@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consulting Website</title>
+
+  <!-- ====================== Tailwind CSS ====================== -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- ====================== AOS Animations ====================== -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <!-- ====================== SwiperJS (Slider) ====================== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- ====================== fontawesome ====================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- ====================== GSAP (Animations) ====================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body >
+ <div id="navbar"></div>
+ 
+  <section class="relative h-[350px] flex items-center bg-cover bg-center"
+style="background-image: url('https://unsplash.com/photos/a-group-of-people-sitting-at-a-table-working-on-paperwork-HqyLpZyGPYc');">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <div class="container mx-auto relative z-10 px-6">
+        
+        <h1 class="text-white text-4xl font-bold mb-4">
+          Our Clients
+        </h1>
+
+        <p class="text-gray-200 text-lg max-w-xl leading-relaxed">
+          We take pride in partnering with a diverse range of clients across various industries.
+          Our commitment to excellence and tailored solutions has helped businesses achieve their goals
+          and drive growth. Here are some of the esteemed clients we have had the privilege to work with.
+        </p>
+
+        <!-- Breadcrumb -->
+        <div class="flex items-center gap-2 text-white text-sm mt-4">
+            <i class="fa-solid fa-house"></i>
+            <span>HOME</span>
+            <span class="text-gray-300">></span>
+            <span class="text-green-400 font-semibold">FINANCIAL CONSULTING</span>
+        </div>
+
+    </div>
+
+</section>
+
+  <!-- Init AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- Init Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/Javascript/Navbar.js"></script>
+  <script src="/Javascript/Main.js"></script>
+
+</body>
+</html>
