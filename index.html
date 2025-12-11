@@ -23,7 +23,7 @@
   <div class="container-bs flex items-center justify-between">
 
     <!-- Logo -->
-     <div class="flex items-center space-x-1">
+     <div class="flex items-center space-x-1 space-x-2">
        <a href="#" class="flex-shrink-0">
          <img 
          src="logo-removebg-preview.png"
@@ -31,7 +31,7 @@
          class="h-14 w-auto"
          />
         </a>
-        <p>projmint <br><span class="text-[#1a73e8]">Serviesc & Consulting</span></p>
+        <p class="text-2xl font-bold">Projmint <br><span class="text-[#1a73e8] font-semibold text-sm  ">Serviesc & Consulting</span></p>
 
      </div>
   
@@ -127,15 +127,24 @@
         </button>
 
         <ul id="mobile-hr-menu" class="hidden flex-col pl-6  mt-2 rounded-md">
-          <li class="p-3 border-b  hover:text-[#1a73e8]"><a href="pages/services.html">Recruitment</a></li>
-          <li class="p-3 border-b  hover:text-[#1a73e8]"><a href="pages/services.html">Training & Development</a></li>
-          <li class="p-3 border-b  hover:text-[#1a73e8]"><a href="pages/services.html">Payroll Management</a></li>
-          <li class="p-3 border-b  hover:text-[#1a73e8]"><a href="pages/services.html">Employee Relations</a></li>
+         <li><a href="./pages/details-services.html?service=recruitment" class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Recruitment</a></li>
+          <li><a href="./pages/details-services.html?service=social-insurance" class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Training & Development</a></li>
+          <li><a href="./pages/details-services.html?service=payroll" class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Payroll Management</a></li>
+          <li><a href="./pages/details-services.html?service=social-insurance" class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Social insurance & Laor Offies Handling</a></li>
+          <li><a href="./pages/details-services.html?service=personnel-affairs" class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Personnel Affairs Services</a></li>
+          <li><a href="./pages/details-services.html?service=organizational-development" class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Organizations Development</a></li>
+          <li><a href="./pages/details-services.html?service=hr-audting" class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">HR Audting Services</a></li>
+          <li><a href="./pages/details-services.html?service=hr-consulting" class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Humen Resources Consulting</a></li>
+
         </ul>
       </li>
 
       <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="./pages/accounting.html">Accounting</a></li>
+
       <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="./pages/financial.html">Financial Consulting</a></li>
+      <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="./pages/ai-solutation.html"> AI Solution </a></li>
+       
+
       <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="./pages/clients.html">Our Clients</a></li>
       <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="./pages/about.html">About Us</a></li>
       <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="./pages/contact.html">Contact Us</a></li>
@@ -144,7 +153,7 @@
   </div>
 </header>
 <!-- HERO SECTION -->
-<section class="relative w-full h-screen overflow-hidden">
+<section class="relative w-full h-screen overflow-hidden ">
 
   <div id="slider" class="relative w-full h-full">
 
@@ -226,8 +235,8 @@
 </section>
 <!-- FEATURES SECTION -->
 
-<section class="py-20 bg-[#f9f7f7]">
-  <div class="max-w-6xl mx-auto px-6 text-center">
+<section class="py-20 container-fluid-bs bg-[#f9f7f7]">
+  <div class="max-w-6xl mx-auto px-6 text-center container-bs">
     <!-- Section Title -->
     <h2 class="text-3xl sm:text-5xl font-bold text-gray-900 mb-6" data-aos="fade-up">
       Our Key Features
@@ -275,9 +284,9 @@
   </div>
 </section>
 <!-- ABOUT US SECTION -->
-<section id="about" class="relative py-20 bg-[#f9f7f7] overflow-hidden">
+<section id="about" class="relative py-20 bg-[#f9f7f7] overflow-hidden container-fluid-bs">
 
-  <div class="max-w-7xl mx-auto px-6 relative">
+  <div class="max-w-7xl mx-auto px-6 relative container-bs">
 
     <!-- SECTION TITLE -->
     <div class="text-center mb-20">
@@ -367,7 +376,7 @@
   </div>
 </section>
 <!-- SERVICES SECTION -->
-<section class="py-20 bg-[#f9f7f7]">
+<section class="py-20 bg-[#f9f7f7] container-fluid-bs">
 
   <!-- ====== TITLE ====== -->
   <div class="text-center mb-16">
@@ -380,21 +389,21 @@
   </div>
 
   <!-- ====== CARDS GRID ====== -->
-  <div class="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 gap-10 
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 
               max-w-[1200px] mx-auto px-6">
 
     <!-- ====== CARD 1 ====== -->
-    <div class="w-[370px] h-[414px] bg-white rounded-2xl 
+    <div class="w-full max-w-[330px] mx-auto bg-white rounded-2xl 
                 shadow-[0_20px_70px_rgba(0,0,0,0.05)]
-                p-10 flex flex-col 
+                p-7 md:p-10 flex flex-col text-center md:text-left
                 hover:shadow-[0_25px_90px_rgba(0,0,0,0.10)]
                 transition">
 
       <img
-       src="https://cdn.prod.website-files.com/6406f54b722f3281fe1586fe/641a8c39ff592432c7a3c538_service-icon-7.svg"
-        class="w-16 h-16 mb-6" />
+        src="https://cdn.prod.website-files.com/6406f54b722f3281fe1586fe/641a8c39ff592432c7a3c538_service-icon-7.svg"
+        class="w-14 h-14 mb-5 mx-auto md:mx-0" />
 
-      <a href="#" class="text-2xl font-semibold text-[#3F3D56] hover:text-[#1E40AF] transition">
+      <a href="#" class="text-xl font-semibold text-[#3F3D56] hover:text-[#1E40AF] transition">
         Recruitment Services & Outsourcing
       </a>
 
@@ -402,24 +411,24 @@
        Get some soul healing and guidance for your future career and vocational directions.
       </p>
 
-      <p><a href="#" class="mt-6 inline-block bg-[#3F3D56] text-white px-6 py-2 rounded-lg text-sm font-semibold
-              hover:bg-[#1E40AF] transition">
-          Read More
-        </a></p>
+      <p><a href="pages/services.html" class="mt-6 inline-block bg-[#3F3D56] text-white px-6 py-2 rounded-lg text-sm font-semibold
+              hover:bg-[#1E40AF] transition mx-auto md:mx-0">
+        Read More
+      </a></p>
     </div>
 
     <!-- ====== CARD 2 ====== -->
-    <div class="w-[370px] h-[414px] bg-white rounded-2xl 
+    <div class="w-full max-w-[330px] mx-auto bg-white rounded-2xl 
                 shadow-[0_20px_70px_rgba(0,0,0,0.05)]
-                p-10 flex flex-col 
+                p-7 md:p-10 flex flex-col text-center md:text-left
                 hover:shadow-[0_25px_90px_rgba(0,0,0,0.10)]
                 transition">
 
       <img
         src="https://cdn.prod.website-files.com/6406f54b722f3281fe1586fe/640710bec01537eec3ab22b1_service-icon-4.svg"
-        class="w-16 h-16 mb-6" />
+        class="w-14 h-14 mb-5 mx-auto md:mx-0" />
 
-      <a href="#" class="text-2xl font-semibold text-[#3F3D56] hover:text-[#1E40AF] transition">
+      <a href="#" class="text-xl font-semibold text-[#3F3D56] hover:text-[#1E40AF] transition">
         Social Insurance & Labor Offices Handling
       </a>
 
@@ -427,24 +436,24 @@
         Get some soul healing and guidance for your future career and vocational directions.
       </p>
 
-      <p><a href="#" class="mt-6 inline-block bg-[#3F3D56] text-white px-6 py-2 rounded-lg text-sm font-semibold
-              hover:bg-[#1E40AF] transition">
-          Read More
-        </a></p>
+      <p><a href="pages/services.html" class="mt-6 inline-block bg-[#3F3D56] text-white px-6 py-2 rounded-lg text-sm font-semibold
+              hover:bg-[#1E40AF] transition mx-auto md:mx-0">
+        Read More
+      </a></p>
     </div>
 
     <!-- ====== CARD 3 ====== -->
-    <div class="w-[370px] h-[414px] bg-white rounded-2xl 
+    <div class="w-full max-w-[330px] mx-auto bg-white rounded-2xl 
                 shadow-[0_20px_70px_rgba(0,0,0,0.05)]
-                p-10 flex flex-col 
+                p-7 md:p-10 flex flex-col text-center md:text-left
                 hover:shadow-[0_25px_90px_rgba(0,0,0,0.10)]
                 transition">
 
       <img
         src="https://cdn.prod.website-files.com/6406f54b722f3281fe1586fe/6407108590c3f642f4ffd6d4_service-icon-6.svg"
-        class="w-16 h-16 mb-6" />
+        class="w-14 h-14 mb-5 mx-auto md:mx-0" />
 
-      <a href="#" class="text-2xl font-semibold text-[#3F3D56] hover:text-[#1E40AF] transition">
+      <a href="#" class="text-xl font-semibold text-[#3F3D56] hover:text-[#1E40AF] transition">
         Internal Personnel Affairs Services
       </a>
 
@@ -452,22 +461,23 @@
         Get some soul healing and guidance for your future career and vocational directions.
       </p>
 
-      <p><a href="#" class="mt-6 inline-block bg-[#3F3D56] text-white px-6 py-2 rounded-lg text-sm font-semibold
-              hover:bg-[#1E40AF] transition">
-          Read More
-        </a></p>
+        <p><a href="pages/services.html" class="mt-6 inline-block bg-[#3F3D56] text-white px-6 py-2 rounded-lg text-sm font-semibold
+              hover:bg-[#1E40AF] transition mx-auto md:mx-0">
+        Read More
+      </a></p>
     </div>
 
   </div>
 
 </section>
+
  <!-- FAQ SECTION -->
-<section class="py-20 overflow-hidden relative bg-[#f9f7f7]">
+<section class="py-20 overflow-hidden relative bg-[#f9f7f7] container-fluid-bs">
 
   <!-- Decorative Line -->
 
 
-  <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+  <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center container-bs">
 
     <!-- TEXT + FAQ -->
     <div>
@@ -549,7 +559,7 @@
   </div>
 </section>
 <!-- CASE STUDIES SECTION -->
-<section class="py-20 bg-[#f9f7f7]">
+<section class="py-20 bg-[#f9f7f7] ccontainer-fluid-bs">
 
   <!-- ====== TITLE ====== -->
   <div class="text-center mb-16">
@@ -607,7 +617,7 @@
 
 </section>
 <!--Cta-->
-<section class="relative py-24 bg-gradient-to-r from-[#1E3A8A] via-[#273B6A] to-[#1E3A8A] overflow-hidden">
+<section class="relative  py-24 bg-gradient-to-r from-[#1E3A8A] via-[#273B6A] to-[#1E3A8A] overflow-hidden ">
 
   <!-- Background Image -->
   <img src="https://images.unsplash.com/photo-1581093448790-6ed2b0b12a8d?auto=format&fit=crop&w=1600&q=80"
@@ -624,7 +634,7 @@
       <p class="text-white/80 text-lg mb-6">
         Partner with our expert consultants to unlock growth, streamline operations, and maximize your potential.
       </p>
-      <a href="#contact"
+      <a href="./pages/contact.html"
          class="inline-block bg-white text-[#1E3A8A] font-semibold px-8 py-4 rounded-2xl shadow-lg hover:bg-gray-100 transition">
         Get Started
       </a>
@@ -641,8 +651,8 @@
 
 
 
-<footer class="bg-white text-gray-700 px-6 md:px-16 py-12 border-t">
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+<footer class="bg-[#F5F5F5] text-gray-700 px-6 md:px-16 py-12 border-t container-fluid-bs">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-10 container-bs">
 
     <!-- Column 1 -->
     <div>
