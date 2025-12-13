@@ -1,43 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <!--taiwind-->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCULaMxtR+... crossorigin=" anonymous" referrerpolicy="no-referrer" />
+  <!--Css-->
+  <link rel="stylesheet" href="../Css/styles.css">
 </head>
+
 <body>
   <section class="relative h-[400px] flex items-center bg-cover bg-center"
-  style="background-image: url('https://images.unsplash.com/photo-1554224155-3a58922a22c3?w=1200&auto=format&fit=crop&q=80');">
+    style="background-image: url('https://images.unsplash.com/photo-1554224155-3a58922a22c3?w=1200&auto=format&fit=crop&q=80');">
 
-  <!-- Overlay -->
-  <div class="absolute inset-0 bg-black/60"></div>
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/60"></div>
 
-  <div class="container mx-auto relative z-10 px-6 lg:px-20 text-center lg:text-left">
-    
-    <!-- Title -->
-    <h1 class="text-white text-4xl sm:text-5xl font-extrabold mb-4" data-aos="fade-up">
-      Accounting Services
-    </h1>
+    <div class="container mx-auto relative z-10 px-6 lg:px-20 text-center lg:text-left">
 
-    <!-- Description -->
-    <p class="text-gray-200 text-lg sm:text-xl max-w-3xl leading-relaxed mb-6" data-aos="fade-up" data-aos-delay="100">
-      We provide professional accounting services to help businesses maintain accurate financial records, 
-      comply with regulations, and make informed decisions. Our experienced team ensures your finances 
-      are managed efficiently and transparently.
-    </p>
+      <!-- Title -->
+      <h1 class="text-white text-4xl sm:text-5xl font-extrabold mb-4" data-aos="fade-up">
+        Accounting Services
+      </h1>
 
-    <!-- Breadcrumb -->
-    <div class="flex justify-center lg:justify-start items-center gap-2 text-white text-sm" data-aos="fade-up" data-aos-delay="200">
-      <i class="fa-solid fa-house"></i>
-      <a href="#" class="hover:text-blue-400 transition">Home</a>
-      <span class="text-gray-300">/</span>
-      <span class="text-blue-400 font-semibold">Accounting Services</span>
+      <!-- Description -->
+      <p class="text-gray-200 text-lg sm:text-xl max-w-3xl leading-relaxed mb-6" data-aos="fade-up"
+        data-aos-delay="100">
+        We provide professional accounting services to help businesses maintain accurate financial records,
+        comply with regulations, and make informed decisions. Our experienced team ensures your finances
+        are managed efficiently and transparently.
+      </p>
+
+      <!-- Breadcrumb -->
+      <div class="flex justify-center lg:justify-start items-center gap-2 text-white text-sm" data-aos="fade-up"
+        data-aos-delay="200">
+        <i class="fa-solid fa-house"></i>
+        <a href="../index.html" class="hover:text-blue-400 transition">Home</a>
+        <span class="text-gray-300">/</span>
+        <span class="text-blue-400 font-semibold">Accounting Services</span>
+      </div>
+
     </div>
+  </section>
+  <section class="py-24 bg-[#f4f7fb]">
+    <div class="container-bs mx-auto px-6 lg:px-20">
 
-  </div>
-</section>
+      <!-- Section Title -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-4">
+          Accounting Services
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Professional accounting and financial services to help your business stay compliant and grow confidently.
+        </p>
+      </div>
 
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition p-8 text-center">
+          <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-blue-100 text-blue-600">
+            <i class="fa-solid fa-file-invoice-dollar text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">
+            Accounts Auditing
+          </h3>
+          <p class="text-gray-600 text-sm mb-6">
+            Comprehensive auditing services to ensure financial accuracy and regulatory compliance.
+          </p>
+          <!-- Accounts Auditing -->
+          <a href="Accounting-details.html?service=accounting-auditing" class="text-blue-600 font-semibold text-sm">
+            View Details →
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition p-8 text-center">
+          <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-blue-100 text-blue-600">
+            <i class="fa-solid fa-calculator text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">
+            Tax Return Filing
+          </h3>
+          <p class="text-gray-600 text-sm mb-6">
+            Accurate preparation and filing of tax returns to meet all legal requirements.
+          </p>
+
+          <!-- Tax Return Filing -->
+          <a href="Accounting-details.html?service=accounting-taxreturn" class="text-blue-600 font-semibold text-sm">
+            View Details →
+          </a>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition p-8 text-center">
+          <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-blue-100 text-blue-600">
+            <i class="fa-solid fa-book text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">
+            Bookkeeping
+          </h3>
+          <p class="text-gray-600 text-sm mb-6">
+            Organized and accurate bookkeeping to keep your financial records up to date.
+          </p>
+          <!-- Bookkeeping -->
+          <a href="Accounting-details.html?service=accounting-bookkeeping" class="text-blue-600 font-semibold text-sm">
+            View Details →
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition p-8 text-center">
+          <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-blue-100 text-blue-600">
+            <i class="fa-solid fa-file-lines text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">
+            E-Invoice
+          </h3>
+          <p class="text-gray-600 text-sm mb-6">
+            Electronic invoicing solutions fully compliant with tax authority regulations.
+          </p>
+          <!-- E-Invoice -->
+          <a href="Accounting-details.html?service=accounting-einvoice" class="text-blue-600 font-semibold text-sm">
+            View Details →
+          </a>
+
+
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition p-8 text-center">
+          <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-blue-100 text-blue-600">
+            <i class="fa-solid fa-receipt text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">
+            E-Receipt
+          </h3>
+          <p class="text-gray-600 text-sm mb-6">
+            Digital receipt solutions that simplify transactions and reporting.
+          </p>
+          <!-- E-Receipt -->
+          <!-- E-Receipt -->
+          <a href="Accounting-details.html?service=accounting-ereceipt" class="text-blue-600 font-semibold text-sm">
+            View Details →
+          </a>
+
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition p-8 text-center">
+          <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-blue-100 text-blue-600">
+            <i class="fa-solid fa-building text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">
+            Company Formation
+          </h3>
+          <p class="text-gray-600 text-sm mb-6">
+            End-to-end company formation services to help you start your business smoothly.
+          </p>
+          <!-- Company Formation -->
+          <a href="Accounting-details.html?service=accounting-companyformation"
+            class="text-blue-600 font-semibold text-sm">
+            View Details →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script src="../Javascript/Main.js"></script>
 </body>
+
 </html>

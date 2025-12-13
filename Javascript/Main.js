@@ -1,3 +1,5 @@
+
+
 window.addEventListener('DOMContentLoaded', () => {
   // Carousel
   const slides = document.querySelectorAll('.slide');
@@ -95,7 +97,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-
   document.addEventListener('DOMContentLoaded', () => {
   const params = new URLSearchParams(window.location.search);
   const service = params.get('service');
@@ -113,3 +114,68 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
+
+
+
+
+
+
+
+  // Clients Swiper Initialization
+  const swiper = new Swiper(".clientsSwiper", {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 30,
+
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+
+    breakpoints: {
+      640: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 5,
+      },
+    },
+  });
+
+
+   const counters = document.querySelectorAll('.counter');
+
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+
+      // سرعة العد
+      const increment = target / 200;
+
+      if(count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 10);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    // اتأكد العد يحصل لما العنصر يظهر بالـ viewport
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          updateCount();
+          observer.unobserve(counter);
+        }
+      });
+    }, {threshold: 0.5});
+
+    observer.observe(counter);
+  });
+
+
