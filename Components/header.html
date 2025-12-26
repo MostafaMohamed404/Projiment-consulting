@@ -1,0 +1,152 @@
+<header class="fixed top-0 left-0 w-full z-50 bg-white shadow-sm py-4 md:py-6">
+
+  <div class="container-bs flex items-center justify-between px-4 sm:px-6 lg:px-0">
+
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <a href="/index.html" class="flex-shrink-0">
+        <img
+          src="/images/logo.png"
+          alt="Projiment logo"
+          class="h-11 sm:h-13 md:h-14 w-auto"
+        />
+      </a>
+      <p class="text-2xl font-bold leading-tight">
+        Projiment
+        <span class="block text-[#1a73e8] font-semibold text-sm mt-0.5 leading-none">
+          Services & Consulting
+        </span>
+      </p>
+    </div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden lg:flex items-center space-x-6 relative">
+
+      <a href="/index.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Home</a>
+
+      <!-- HR Services Dropdown -->
+      <div class="group relative">
+        <a
+          href="/pages/services.html"
+          class="text-[#444] hover:text-[#1a73e8] font-medium transition flex items-center"
+        >
+          HR Services
+          <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 9l-7 7-7-7" />
+          </svg>
+        </a>
+
+        <div class="absolute left-0 top-8 w-48 bg-white shadow-lg rounded-md py-3
+                    opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                    transition-all duration-200">
+
+          <a href="/pages/details-services.html?service=recruitment"
+            class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+            Recruitment Services
+          </a>
+
+          <a href="/pages/details-services.html?service=social-insurance"
+            class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+            Training & Development
+          </a>
+
+          <a href="/pages/details-services.html?service=payroll"
+            class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+            Payroll Management
+          </a>
+
+          <a href="/pages/details-services.html?service=social-insurance"
+            class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+            Social Insurance & Labor Offices
+          </a>
+
+          <a href="/pages/details-services.html?service=personnel-affairs"
+            class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+            Personnel Affairs Services
+          </a>
+
+          <a href="/pages/details-services.html?service=organizational-development"
+            class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+            Organization Development
+          </a>
+
+          <a href="/pages/details-services.html?service=hr-auditing"
+            class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+            HR Auditing Services
+          </a>
+
+          <a href="/pages/details-services.html?service=hr-consulting"
+            class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+            Human Resources Consulting
+          </a>
+        </div>
+      </div>
+
+      <a href="/pages/accounting.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">
+        Accounting
+      </a>
+
+      <a href="/pages/financial.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">
+        Financial Advisory
+      </a>
+
+      <a href="/pages/ai-solutation.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">
+        AI Solutions
+      </a>
+
+      <a href="/pages/clients.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">
+        Our Clients
+      </a>
+
+      <a href="/pages/about.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">
+        About Us
+      </a>
+
+      <a href="/pages/contact.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">
+        Contact Us
+      </a>
+
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="lg:hidden text-black" aria-label="open menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu"
+    class="fixed top-0 right-0 h-full w-[60%] bg-white transform translate-x-full
+           transition-transform duration-300 ease-in-out lg:hidden shadow-lg z-40">
+
+    <div class="flex justify-end px-4 h-16 items-center">
+      <button id="close-menu" class="text-black" aria-label="close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="flex flex-col text-[#444] mt-4">
+
+      <li class="border-b p-4"><a href="/index.html">Home</a></li>
+      <li class="border-b p-4"><a href="/pages/services.html">HR Services</a></li>
+      <li class="border-b p-4"><a href="/pages/accounting.html">Accounting</a></li>
+      <li class="border-b p-4"><a href="/pages/financial.html">Financial Advisory</a></li>
+      <li class="border-b p-4"><a href="/pages/ai-solutation.html">AI Solutions</a></li>
+      <li class="border-b p-4"><a href="/pages/clients.html">Our Clients</a></li>
+      <li class="border-b p-4"><a href="/pages/about.html">About Us</a></li>
+      <li class="border-b p-4"><a href="/pages/contact.html">Contact Us</a></li>
+
+    </ul>
+  </div>
+
+</header>

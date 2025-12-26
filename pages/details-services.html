@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>HR Services Details | Recruitment, Payroll & Employee Management</title>
+  <meta name="description" content="Explore detailed HR services including recruitment management, payroll processing, employee performance, onboarding, and HR compliance tailored for business success.">
+  <meta name="keywords" content="HR Services, Recruitment, Payroll, Employee Management, HR Compliance, HR Solutions">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Projiment Consulting">
+
+  <!-- Favicon -->
+<link rel="icon" href="../images/logo.webp">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../Css/styles.css">
+</head>
+
+<body>
+     <header class="sticky top-0 z-50 bg-white shadow-sm py-4 md:py-6 ">
+    <div class="container-bs flex items-center justify-between px-4 sm:px-6 lg:px-0">
+
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <a href="../index.html" class="flex-shrink-0">
+          <img src="../images/logo.webp" alt="Projiment logo"
+            class="h-11 sm:h-13 md:h-14 w-auto" />
+        </a>
+        <p class="text-2xl font-bold leading-tight">
+          Projiment
+          <span class="block text-[#1a73e8] font-semibold text-sm mt-0.5 leading-none">Services & Consulting</span>
+        </p>
+
+      </div>
+
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex items-center space-x-6 relative">
+
+        <a href="../index.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Home</a>
+
+        <!-- HR Services Dropdown (Desktop) -->
+        <div class="group relative">
+          <a class="text-[#444] hover:text-[#1a73e8] font-medium transition flex items-center"
+            href="services.html">
+            HR Services
+            <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+
+          <div class="absolute left-0 top-8 w-48 bg-white shadow-lg rounded-md py-3 opacity-0 invisible 
+                    group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="pages/details-services.html?service=recruitment"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Recruitment Services
+            </a>
+            <a href="pages/details-services.html?service=social-insurance"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Training & Development</a>
+            <a href="pages/details-services.html?service=payroll"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Payroll Management</a>
+            <a href="pages/details-services.html?service=social-insurance"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Social insurance & Laor Offies
+              Handling</a>
+            <a href="pages/details-services.html?service=personnel-affairs"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Personnel Affairs Services
+            </a>
+            <a href="pages/details-services.html?service=organizational-development"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Organizations Development
+            </a>
+            <a href="pages/details-services.html?service=hr-consulting"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              HR Audting Services
+            </a>
+            <a href="pages/details-services.html?service=hr-consulting"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Humen Resources Consulting
+            </a>
+          </div>
+        </div>
+
+        <a href="../pages/accounting.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Accounting</a>
+        <a href="../pages/financial.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Financial
+          Advisory</a>
+        <a href="../pages/ai-solutation.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">
+          AI Solutions </a>
+        <a href="../pages/clients.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Our Clients</a>
+        <a href="../pages/about.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">About us</a>
+        <a href="../pages/contact.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Contact us</a>
+
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="lg:hidden text-black" aria-label="open-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-[60%] bg-white transform translate-x-full 
+              transition-transform duration-300 ease-in-out lg:hidden shadow-lg z-40">
+
+      <div class="flex justify-end px-4 h-16 items-center">
+        <button id="close-menu" class="text-black" aria-label="close-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <ul class="flex flex-col text-[#444] mt-4">
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition">
+          <a href="../index.html">Home</a>
+        </li>
+
+        <!-- HR Dropdown (Mobile) -->
+        <li class="border-b p-4">
+          <button id="mobile-hr-btn"
+            class="w-full text-left flex justify-between items-center hover:text-[#1a73e8] transition"
+            aria-label="open-hr-menu">
+            HR Services
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <ul id="mobile-hr-menu" class="hidden flex-col pl-6  mt-2 rounded-md">
+            <li><a href="./pages/details-services.html?service=recruitment"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Recruitment</a></li>
+            <li><a href="./pages/details-services.html?service=social-insurance"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Training & Development</a></li>
+            <li><a href="./pages/details-services.html?service=payroll"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Payroll Management</a></li>
+            <li><a href="./pages/details-services.html?service=social-insurance"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Social insurance & Laor Offies
+                Handling</a></li>
+            <li><a href="./pages/details-services.html?service=personnel-affairs"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Personnel Affairs Services</a></li>
+            <li><a href="./pages/details-services.html?service=organizational-development"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Organizations Development</a></li>
+            <li><a href="./pages/details-services.html?service=hr-audting"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">HR Audting Services</a></li>
+            <li><a href="./pages/details-services.html?service=hr-consulting"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Humen Resources Consulting</a></li>
+
+          </ul>
+        </li>
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="accounting.html">Accounting</a></li>
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="financial.html">Financial Advisory</a>
+        </li>
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="ai-solutation.html"> Ai Solutions </a>
+        </li>
+
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="clients.html">Our Clients</a></li>
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="about.html">About us</a></li>
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="contact.html">Contact us</a></li>
+
+      </ul>
+    </div>
+  </header>
+  <main>
+<section class="relative h-[400px] flex items-center bg-cover bg-center"
+  style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&auto=format&fit=crop&q=80');">
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <div class="container mx-auto relative z-10 px-6 lg:px-20 text-center lg:text-left">
+    
+    <!-- Title -->
+    <h1 class="text-white text-4xl sm:text-5xl font-extrabold mb-4" data-aos="fade-up">
+       Service Details
+    </h1>
+
+    <!-- Description -->
+    <p class="text-gray-200 text-lg sm:text-xl max-w-3xl leading-relaxed mb-6" data-aos="fade-up" data-aos-delay="100">
+      Our accounting services are designed to give you complete control over your financial operations. 
+      From daily bookkeeping to detailed financial reporting, we ensure accuracy, compliance, and 
+      clarity to support your business growth.
+    </p>
+
+
+
+  </div>
+</section>
+
+<section class="container-bs mx-auto px-6 py-20">
+
+<section id="recruitment" class="hr-service hidden">
+
+  <!-- HERO SECTION -->
+  <div class="mb-20">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+      <!-- TEXT -->
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+          Professional Recruitment Solutions
+        </h1>
+
+        <p class="text-gray-600 text-lg mt-6 max-w-lg">
+          We deliver strategic recruitment services that help companies
+          attract high-performing talent through modern hiring processes,
+          data-driven insights, and industry-focused expertise.
+        </p>
+
+        <div class="mt-8 flex gap-4">
+          <button class="bg-blue-600 text-white px-7 py-3 rounded-full hover:bg-blue-700 transition">
+            Start Hiring
+          </button>
+          <button class="border border-gray-300 px-7 py-3 rounded-full hover:bg-gray-100">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <!-- HERO IMAGE -->
+      <div>
+        <img
+          src="../images/Recruitment-details-services.webp"
+          class="rounded-2xl shadow-lg object-cover w-full h-[420px]"
+          alt="Recruitment Team"
+         loading="lazy" width="1200" height="420"
+        />
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- FEATURES SECTION -->
+  <div class="mb-20">
+    <h2 class="text-3xl font-bold mb-10 text-gray-900 text-center">
+      Recruitment Services We Provide
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- CARD -->
+      <div class="p-8 rounded-2xl border hover:shadow-md transition bg-white">
+        <h3 class="text-xl font-semibold text-blue-600 mb-3">Talent Acquisition</h3>
+        <p class="text-gray-600">
+          Access a wide network of qualified candidates, modern sourcing tools,
+          and targeted recruitment campaigns that ensure accurate matching.
+        </p>
+      </div>
+
+      <div class="p-8 rounded-2xl border hover:shadow-md transition bg-white">
+        <h3 class="text-xl font-semibold text-blue-600 mb-3">Executive Hiring</h3>
+        <p class="text-gray-600">
+          Specialized recruitment for senior and leadership roles requiring
+          confidentiality, precision, and industry expertise.
+        </p>
+      </div>
+
+      <div class="p-8 rounded-2xl border hover:shadow-md transition bg-white">
+        <h3 class="text-xl font-semibold text-blue-600 mb-3">Recruitment Process Outsourcing</h3>
+        <p class="text-gray-600">
+          We manage your hiring operations end-to-end, improving time-to-hire,
+          candidate quality, and overall hiring efficiency.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- IMAGE SPLIT SECTION -->
+  <div class="mb-20">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+      <img
+        src="../images/Interview-process-details-services.webp"
+        class="rounded-2xl object-cover w-full h-[400px]"
+        alt="Interview Process"
+        loading="lazy" width="1000" height="400"
+      />
+
+      <div>
+        <h2 class="text-3xl font-bold mb-4 text-gray-900">
+          Smarter Hiring, Better Teams
+        </h2>
+        <p class="text-gray-600 leading-relaxed">
+          Our expert recruiters use modern tools, behavioral assessments,
+          competency interviews, and market insights to ensure every hire
+          aligns with your company’s culture and long-term goals.
+        </p>
+
+        <ul class="mt-6 space-y-3 text-gray-700">
+          <li>✔ Structured and modern recruitment workflows</li>
+          <li>✔ Access to high-quality job-ready candidates</li>
+          <li>✔ Faster hiring through optimized processes</li>
+          <li>✔ Data-driven insights and hiring predictions</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- CTA -->
+  <div class="text-center bg-blue-50 p-12 rounded-3xl">
+    <h2 class="text-3xl font-bold mb-5 text-gray-900">
+      Ready to Build a High-Performing Team?
+    </h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+      Let our recruitment professionals help you attract, evaluate, and select
+      the right talent—faster and more effectively.
+    </p>
+
+    <a href="contact.html"
+       class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold
+              hover:bg-blue-700 transition">
+      Get Started
+    </a>
+  </div>
+
+</section>
+
+
+<section id="social-insurance" class="hr-service hidden">
+
+  <!-- SECTION WRAPPER -->
+  <div class="py-20">
+
+    <!-- TOP INTRO -->
+    <div class="max-w-4xl mx-auto text-center mb-16">
+      <span class="text-blue-600 font-semibold tracking-wide uppercase">
+        Social Insurance & Labor Office
+      </span>
+
+      <h1 class="text-4xl md:text-5xl font-bold mt-3 text-gray-900 leading-tight">
+        Professional Social Insurance & Labor Compliance Solutions
+      </h1>
+
+      <p class="text-gray-600 text-lg mt-5">
+        We take full responsibility for managing your company’s social insurance 
+        and labor office obligations, ensuring accuracy, compliance, and 
+        seamless workflow for all employee-related legal processes.
+      </p>
+    </div>
+
+
+    <!-- MAIN FEATURED BLOCK -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20 items-center max-w-6xl mx-auto">
+
+      <img 
+          src="../images/Social-Insurance-details-services.webp"
+        class="rounded-3xl w-full h-[420px] object-cover shadow-xl"
+        alt="Insurance Service"
+        loading="lazy" width="1200" height="420"
+      />
+
+      <div class="space-y-6">
+        <h2 class="text-3xl font-bold text-gray-900">
+          Complete Management of All Employee Insurance Procedures
+        </h2>
+        <p class="text-gray-600 leading-relaxed">
+          Our team ensures accurate documentation, timely updates, and full
+          compliance with Egyptian labor laws. We handle everything from employee
+          registrations to monthly reporting and labor office visits.
+        </p>
+
+        <ul class="space-y-3 text-gray-700">
+          <li>✔ New employee registration & documentation</li>
+          <li>✔ Monthly forms & insurance calculations</li>
+          <li>✔ Handling inspections & labor office visits</li>
+          <li>✔ Termination procedures & clearance processes</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <!-- 3 COLUMNS – MODERN DESIGN -->
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mb-20">
+
+      <div class="bg-white p-10 rounded-3xl shadow-md border hover:shadow-xl transition">
+        <img 
+          src="../images/employee-insurance.webp"
+          alt=" Employee Insurance Icon"
+          loading="lazy"
+          class="w-16 mb-5"
+          width="64" height="64"
+        />
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">
+          Employee Insurance Files
+        </h3>
+        <p class="text-gray-600">
+          Creating, updating, and managing complete social insurance files for every employee.
+        </p>
+      </div>
+
+      <div class="bg-white p-10 rounded-3xl shadow-md border hover:shadow-xl transition">
+        <img 
+          src="../images/monthly-insurance.webp"
+          alt="Monthly Insurance Icon"
+          loading="lazy"
+          class="w-16 mb-5"
+          width="64" height="64"
+        />
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">
+          Monthly Insurance Submissions
+        </h3>
+        <p class="text-gray-600">
+          Submitting official monthly forms including wages, changes, and adjustments.
+        </p>
+      </div>
+
+      <div class="bg-white p-10 rounded-3xl shadow-md border hover:shadow-xl transition">
+        <img 
+          src="../images/labor-office.webp"
+          alt="Labor Office Icon"
+          loading="lazy"
+          class="w-16 mb-5"
+          width="64" height="64"
+        />
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">
+          Labor Office Requirements
+        </h3>
+        <p class="text-gray-600">
+          Managing inspections, follow-ups, and all legal communications with labor authorities.
+        </p>
+      </div>
+
+    </div>
+
+
+
+    <!-- FEATURE IMAGE + TEXT REVERSED -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center mb-20">
+
+      <div class="space-y-6">
+        <h2 class="text-3xl font-bold text-gray-900">
+          Avoid Penalties & Stay Fully Compliant
+        </h2>
+        <p class="text-gray-600 leading-relaxed">
+          With continuous updates and accurate submissions, your company will
+          always stay safe from legal risks and unexpected penalties. 
+          We take responsibility for all required documentation and legal procedures.
+        </p>
+
+        <ul class="space-y-3 text-gray-700">
+          <li>✔ Zero delays in legal submissions</li>
+          <li>✔ Full representation in official procedures</li>
+          <li>✔ Real-time updates on regulation changes</li>
+        </ul>
+      </div>
+
+      <img 
+        src="../images/Labor-Office-details-services.webp"
+        class="rounded-3xl w-full h-[420px] object-cover shadow-xl"
+        loading="lazy"
+        alt="Labor-Office-details-services"
+      />
+
+    </div>
+
+
+
+    <!-- CTA BLOCK -->
+    <div class="text-center bg-blue-600 text-white py-16 px-6 rounded-3xl max-w-5xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Need Help Managing Social Insurance & Labor Office Tasks?
+      </h2>
+      <p class="text-lg text-blue-100 max-w-2xl mx-auto mb-8">
+        Let our specialized team handle all formalities and protect your company 
+        from legal issues while you focus on growth.
+      </p>
+
+      <button class="bg-white text-blue-600 px-10 py-4 rounded-full font-semibold hover:bg-gray-100 transition text-lg" aria-label="Get Started Now">
+        Get Started Now
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="hr-auditing" class="hr-service hidden>
+
+  <div class="bg-white p-12 rounded-3xl shadow-[0_20px_80px_rgba(0,0,0,0.06)] border border-gray-100">
+
+    <!-- Title + Subtitle -->
+    <div class="max-w-3xl">
+      <h1 class="text-5xl font-bold text-gray-900 leading-tight">
+        HR Auditing & Compliance  
+      </h1>
+
+      <p class="text-gray-500 text-xl mt-4 leading-relaxed">
+        A full audit that ensures your HR operations meet legal standards,  
+        industry best practices, and internal efficiency requirements.
+      </p>
+    </div>
+
+    <!-- Divider -->
+    <div class="w-full h-[1px] bg-gray-200 my-10"></div>
+
+    <!-- Key Points -->
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
+
+      <div class="p-6 bg-gray-50 rounded-2xl border border-gray-200 hover:shadow-lg transition-all">
+        <h3 class="text-lg font-bold text-gray-800 mb-2">Policy Evaluation</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Identify gaps in contracts, workflows, and compliance documentation.
+        </p>
+      </div>
+
+      <div class="p-6 bg-gray-50 rounded-2xl border border-gray-200 hover:shadow-lg transition-all">
+        <h3 class="text-lg font-bold text-gray-800 mb-2">Employee File Review</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Deep analysis of employee records, onboarding and termination processes.
+        </p>
+      </div>
+
+      <div class="p-6 bg-gray-50 rounded-2xl border border-gray-200 hover:shadow-lg transition-all">
+        <h3 class="text-lg font-bold text-gray-800 mb-2">HR Risk Assessment</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Detect legal risks, compliance issues, and operational weaknesses.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Professional Paragraph -->
+    <div class="max-w-3xl text-gray-600 text-lg leading-[1.9]">
+      Our HR auditing service provides a complete health check of your HR
+      department. From legal compliance to documentation and operational
+      performance, we uncover weaknesses and deliver clear recommendations to
+      build a stronger, more compliant HR structure.
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="payroll" class="hr-service hidden">
+
+  <div class="bg-white p-12 rounded-3xl shadow-[0_25px_90px_rgba(0,0,0,0.07)] border border-gray-100">
+
+    <!-- Title + Subtitle -->
+    <div class="max-w-3xl mb-10">
+      <h1 class="text-5xl font-bold text-gray-900 leading-tight">
+        Payroll Management Services
+      </h1>
+
+      <p class="text-gray-500 text-xl mt-4 leading-relaxed">
+        Fully managed payroll solutions that ensure accuracy, confidentiality, 
+        and compliance with the latest labor laws and financial regulations.
+      </p>
+    </div>
+
+    <!-- Info Block -->
+    <div class="bg-gray-50 border border-gray-200 p-8 rounded-2xl mb-12">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+        Streamlined Payroll Processing
+      </h3>
+      <p class="text-gray-600 text-lg leading-relaxed">
+        We manage your employee compensation cycle from end to end — including salary 
+        calculations, deductions, tax filings, overtime, benefits, and secure reporting. 
+        Our systems ensure error-free payroll execution delivered on schedule, every month.
+      </p>
+    </div>
+
+    <!-- Key Features -->
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
+
+      <div class="p-6 bg-white rounded-2xl border border-gray-200 hover:shadow-xl transition-all">
+        <h4 class="text-lg font-bold text-gray-800 mb-2">Salary Calculation</h4>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Accurate monthly calculations with automated deductions and allowances.
+        </p>
+      </div>
+
+      <div class="p-6 bg-white rounded-2xl border border-gray-200 hover:shadow-xl transition-all">
+        <h4 class="text-lg font-bold text-gray-800 mb-2">Tax & Compliance</h4>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Ensuring payroll aligns with government rules, tax laws, and legal standards.
+        </p>
+      </div>
+
+      <div class="p-6 bg-white rounded-2xl border border-gray-200 hover:shadow-xl transition-all">
+        <h4 class="text-lg font-bold text-gray-800 mb-2">Secure Reporting</h4>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Confidential payslips, analytics dashboards, and monthly reports.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Additional Paragraph -->
+    <div class="max-w-3xl text-gray-600 text-lg leading-[1.9] mb-12">
+      With our payroll outsourcing service, businesses eliminate administrative 
+      workload, reduce errors, and guarantee employee satisfaction through 
+      transparent, timely, and compliant payroll processes.
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-6">
+      <button class="bg-blue-600 text-white px-10 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition">
+        Get Payroll Support
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="personnel-affairs" class="hr-service hidden">
+
+  <div class="bg-white p-12 rounded-3xl shadow-[0_25px_90px_rgba(0,0,0,0.07)] border border-gray-100">
+
+    <!-- Title / Subtitle -->
+    <div class="max-w-3xl mb-10">
+      <h2 class="text-5xl font-extrabold text-gray-900 leading-tight">
+        Personnel Affairs Management
+      </h2>
+
+      <p class="text-gray-500 text-xl mt-4 leading-relaxed">
+        Comprehensive personnel affairs services that streamline employee 
+        administration, documentation, attendance, and compliance workflows.
+      </p>
+    </div>
+
+    <!-- Highlight Block -->
+    <div class="bg-blue-50 border border-blue-100 p-8 rounded-2xl mb-14">
+      <h3 class="text-2xl font-semibold text-blue-700 mb-3">
+        Organized. Compliant. Efficient.
+      </h3>
+      <p class="text-blue-800 text-lg leading-relaxed">
+        We support your HR operations by managing employee records, daily 
+        transactions, government documentation, and policy applications — 
+        ensuring your internal processes are accurate and fully aligned 
+        with labor laws.
+      </p>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="grid md:grid-cols-3 gap-8 mb-14">
+
+      <div class="p-6 bg-white border rounded-2xl hover:shadow-xl transition">
+        <h4 class="text-lg font-bold text-gray-800 mb-2">Employee Files</h4>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Complete handling of employee documents, contracts, renewals, 
+          and secure digital archiving.
+        </p>
+      </div>
+
+      <div class="p-6 bg-white border rounded-2xl hover:shadow-xl transition">
+        <h4 class="text-lg font-bold text-gray-800 mb-2">Attendance & Leaves</h4>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Managing attendance systems, leave balances, permissions,
+          and monthly reports.
+        </p>
+      </div>
+
+      <div class="p-6 bg-white border rounded-2xl hover:shadow-xl transition">
+        <h4 class="text-lg font-bold text-gray-800 mb-2">Policies & Procedures</h4>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Implementation of HR policies, disciplinary actions, and 
+          compliance with internal regulations.
+        </p>
+      </div>
+
+      <div class="p-6 bg-white border rounded-2xl hover:shadow-xl transition">
+        <h4 class="text-lg font-bold text-gray-800 mb-2">Government Relations</h4>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Support with labor office requirements, renewals, forms, 
+          and official submissions.
+        </p>
+      </div>
+
+      <div class="p-6 bg-white border rounded-2xl hover:shadow-xl transition">
+        <h4 class="text-lg font-bold text-gray-800 mb-2">Employee Onboarding</h4>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Smooth onboarding processes including contracts, ID creation, 
+          orientations, and system setup.
+        </p>
+      </div>
+
+      <div class="p-6 bg-white border rounded-2xl hover:shadow-xl transition">
+        <h4 class="text-lg font-bold text-gray-800 mb-2">Exit Procedures</h4>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          End-of-service settlements, clearances, document delivery, 
+          and offboarding workflows.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Description -->
+    <div class="max-w-3xl text-gray-600 text-lg leading-[1.9] mb-14">
+      Our personnel affairs service helps companies maintain structured 
+      and compliant employee administration systems while reducing HR 
+      workload and enhancing operational consistency.
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center">
+      <button class="bg-blue-600 text-white px-10 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition">
+        Improve Your Personnel Operations
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="organizational-development" class="hr-service hidden>
+  <h2 class="text-4xl font-bold mb-6">Organizational Development</h2>
+  <p class="text-gray-500 text-lg mb-4">
+    Organizational Development (OD) is a systematic approach to improving the effectiveness, efficiency, and health of an organization. It focuses on aligning strategy, people, processes, and culture to drive sustainable growth and long-term success.
+  </p>
+  <p class="text-gray-500 text-lg mb-4">
+    Our OD services include comprehensive assessments of organizational structure, leadership development, talent management, and change management. We help organizations identify gaps, streamline processes, and build strong internal capabilities to achieve strategic objectives.
+  </p>
+  <p class="text-gray-500 text-lg mb-4">
+    By leveraging proven methodologies and best practices, we support companies in fostering a culture of continuous improvement, enhancing employee engagement, and driving innovation. Whether you are undergoing transformation or aiming to boost performance, our solutions are tailored to meet your unique organizational needs.
+  </p>
+</section>
+
+
+<section id="hr-consulting" class="hr-service hidden">
+  <h2 class="text-4xl font-bold mb-6">Human Resources Consulting</h2>
+  <p class="text-gray-500 text-lg mb-4">
+    Our Human Resources Consulting services help organizations optimize their HR functions and strategies to attract, retain, and develop top talent. We provide expert guidance on workforce planning, performance management, and HR policies to ensure alignment with your business goals.
+  </p>
+  <p class="text-gray-500 text-lg mb-4">
+    We assist in creating effective recruitment processes, employee engagement programs, and training & development initiatives that enhance productivity and foster a positive workplace culture.
+  </p>
+  <p class="text-gray-500 text-lg mb-4">
+    By leveraging industry best practices and HR analytics, our consulting services enable companies to make informed decisions, improve operational efficiency, and build a resilient and motivated workforce ready to achieve sustainable growth.
+  </p>
+</section>
+
+
+</section>
+
+ </main>
+
+<script src="../Javascript/Main.js"></script>
+
+</body>
+</html>

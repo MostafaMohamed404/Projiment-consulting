@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>About Us | Projiment Consulting – Expert HR & Financial Services</title>
+  <meta name="description" content="Learn more about Projiment Consulting, our mission, vision, and team of experts delivering professional HR, accounting, financial advisory, and consulting services for business growth.">
+  <meta name="keywords" content="About Projiment Consulting, HR Experts, Financial Advisory, Accounting Services, Business Consulting, Company Profile">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Projiment Consulting">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Us | Projiment Consulting">
+  <meta property="og:description" content="Meet our team and learn about our mission to provide top-tier HR, accounting, and financial consulting services for businesses.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourwebsite.com/about-us">
+  <meta property="og:image" content="https://yourwebsite.com/images/about-us-banner.jpg">
+
+  <!-- Favicon -->
+<link rel="icon" href="../images/logo.webp">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../Css/styles.css">
+</head>
+
+<body>
+         <header class="sticky top-0 z-50 bg-white shadow-sm py-4 md:py-6 ">
+    <div class="container-bs flex items-center justify-between px-4 sm:px-6 lg:px-0">
+
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <a href="index.html" class="flex-shrink-0">
+          <img src="../images/logo.webp" alt="Projiment logo"
+            class="h-11 sm:h-13 md:h-14 w-auto" width="180" height="56" />
+        </a>
+        <p class="text-2xl font-bold leading-tight">
+          Projiment
+          <span class="block text-[#1a73e8] font-semibold text-sm mt-0.5 leading-none">Services & Consulting</span>
+        </p>
+
+      </div>
+
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex items-center space-x-6 relative">
+
+        <a href="../index.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Home</a>
+
+        <!-- HR Services Dropdown (Desktop) -->
+        <div class="group relative">
+          <a class="text-[#444] hover:text-[#1a73e8] font-medium transition flex items-center"
+            href="services.html">
+            HR Services
+            <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+
+          <div class="absolute left-0 top-8 w-48 bg-white shadow-lg rounded-md py-3 opacity-0 invisible 
+                    group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="pages/details-services.html?service=recruitment"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Recruitment Services
+            </a>
+            <a href="pages/details-services.html?service=social-insurance"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Training & Development</a>
+            <a href="pages/details-services.html?service=payroll"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Payroll Management</a>
+            <a href="pages/details-services.html?service=social-insurance"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Social insurance & Laor Offies
+              Handling</a>
+            <a href="pages/details-services.html?service=personnel-affairs"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Personnel Affairs Services
+            </a>
+            <a href="pages/details-services.html?service=organizational-development"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Organizations Development
+            </a>
+            <a href="pages/details-services.html?service=hr-consulting"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              HR Audting Services
+            </a>
+            <a href="pages/details-services.html?service=hr-consulting"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Humen Resources Consulting
+            </a>
+          </div>
+        </div>
+
+        <a href="../pages/accounting.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Accounting</a>
+        <a href="../pages/financial.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Financial
+          Advisory</a>
+        <a href="../pages/ai-solutation.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">
+          AI Solutions </a>
+        <a href="../pages/clients.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Our Clients</a>
+        <a href="../pages/about.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">About us</a>
+        <a href="../pages/contact.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Contact us</a>
+
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="lg:hidden text-black" aria-label="open-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-[60%] bg-white transform translate-x-full 
+              transition-transform duration-300 ease-in-out lg:hidden shadow-lg z-40">
+
+      <div class="flex justify-end px-4 h-16 items-center">
+        <button id="close-menu" class="text-black" aria-label="close-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <ul class="flex flex-col text-[#444] mt-4">
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition">
+          <a href="../index.html">Home</a>
+        </li>
+
+        <!-- HR Dropdown (Mobile) -->
+        <li class="border-b p-4">
+          <button id="mobile-hr-btn"
+            class="w-full text-left flex justify-between items-center hover:text-[#1a73e8] transition"
+            aria-label="open-hr-menu">
+            HR Services
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <ul id="mobile-hr-menu" class="hidden flex-col pl-6  mt-2 rounded-md">
+            <li><a href="./pages/details-services.html?service=recruitment"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Recruitment</a></li>
+            <li><a href="./pages/details-services.html?service=social-insurance"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Training & Development</a></li>
+            <li><a href="./pages/details-services.html?service=payroll"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Payroll Management</a></li>
+            <li><a href="./pages/details-services.html?service=social-insurance"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Social insurance & Laor Offies
+                Handling</a></li>
+            <li><a href="./pages/details-services.html?service=personnel-affairs"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Personnel Affairs Services</a></li>
+            <li><a href="./pages/details-services.html?service=organizational-development"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Organizations Development</a></li>
+            <li><a href="./pages/details-services.html?service=hr-audting"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">HR Audting Services</a></li>
+            <li><a href="./pages/details-services.html?service=hr-consulting"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Humen Resources Consulting</a></li>
+
+          </ul>
+        </li>
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="accounting.html">Accounting</a></li>
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="financial.html">Financial Advisory</a>
+        </li>
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="ai-solutation.html"> Ai Solutions </a>
+        </li>
+
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="clients.html">Our Clients</a></li>
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="about.html">About us</a></li>
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="contact.html">Contact us</a></li>
+
+      </ul>
+    </div>
+  </header>
+   <main>
+<!-- ================= HERO ================= -->
+<section class="relative h-[400px] flex items-center justify-center text-center bg-cover bg-center"
+  style="background-image: url('../images/close-up-busy-businessman.jpg');">
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <div class="container mx-auto relative z-10 px-6 lg:px-20 text-center lg:text-left">
+    
+    <!-- Title -->
+    <h1 class="text-white text-4xl sm:text-5xl font-extrabold mb-4" data-aos="fade-up">
+       About us Our Company
+    </h1>
+
+    <!-- Description -->
+    <p class="text-gray-200 text-lg sm:text-xl max-w-3xl leading-relaxed mb-6" data-aos="fade-up" data-aos-delay="100">
+      We are a professional consulting company committed to delivering reliable
+      accounting, financial, and business advisory services. Our goal is to help
+      organizations achieve clarity, compliance, and sustainable growth through
+      strategic planning and trusted expertise.
+    </p>
+   
+
+  </div>
+</section>
+
+
+
+<!-- ================= WHO WE ARE ================= -->
+<section class="py-20">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    
+    <div>
+      <h2 class="text-3xl font-bold mb-6">
+        Who <span class="text-blue-600">We Are</span>
+      </h2>
+      <p class="text-gray-600 mb-4 leading-relaxed">
+        We are a professional consulting firm dedicated to helping businesses
+        improve performance, solve complex challenges, and achieve long-term success.
+      </p>
+      <p class="text-gray-600 leading-relaxed">
+        With years of experience across multiple industries, our team delivers
+        data-driven strategies, practical insights, and measurable results.
+      </p>
+    </div>
+
+    <div class="">
+      <img 
+        src="../images/who-we-are.webp"
+
+        class="rounded-xl shadow-lg "
+        alt="Who We Are"
+         loading="lazy" width="700" height="460"
+      />
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= ABOUT US ================= -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-14 items-center">
+
+    <!-- Image -->
+    <div class="md:w-1/2">
+      <img 
+        src="../images/about-2.webp"
+        class="rounded-xl shadow-lg w-full object-cover"
+        alt="About projiment"
+        loading="lazy" width="900" height="500"
+      />
+    </div>
+
+    <!-- Content -->
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold mb-6 relative inline-block">
+        About us
+        <span class="absolute -bottom-2 left-0 w-20 h-1 bg-blue-600"></span>
+      </h2>
+
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Projiment is a specialized consulting firm providing integrated solutions
+        in financial consulting, accounting services, and human resources management.
+        We support organizations across multiple industries in achieving full
+        financial compliance, operational efficiency, and long-term sustainable growth.
+      </p>
+
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Our services are designed to help businesses make informed decisions through
+        accurate financial analysis, structured reporting, and strategic planning.
+        We work closely with our clients to understand their challenges and deliver
+        customized solutions that align with their business objectives.
+      </p>
+
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Our core offerings include financial modeling, regulatory and compliance
+        consulting, governance and risk management, corporate structuring, tax
+        preparation, digital invoicing solutions, and professional training programs
+        aimed at enhancing organizational performance.
+      </p>
+
+      <p class="text-blue-600 font-semibold leading-relaxed">
+        In addition, we provide comprehensive HR services such as work permit
+        processing for foreign employees, payroll support, and HR compliance
+        solutions, ensuring smooth operations and full legal adherence.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= OUR VISION ================= -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+
+    <h2 class="text-3xl font-bold mb-6 relative inline-block">
+      Our Vision
+      <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-20 h-1 bg-blue-600"></span>
+    </h2>
+
+    <p class="text-gray-700 leading-relaxed mb-4">
+      To become the strategic partner of choice for businesses pursuing growth,
+      sustainability, and long-term success.
+    </p>
+
+    <p class="text-gray-700 leading-relaxed">
+      Through delivering professional financial, accounting, and human resources
+      services built on integrity, compliance, and digital transformation, we
+      empower our clients to make informed decisions, achieve full regulatory
+      compliance, and build resilient business environments aligned with local
+      and global market developments.
+    </p>
+
+  </div>
+</section>
+
+<!-- ================= CONSULTING APPROACH ================= -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-14">
+      <h2 class="text-3xl font-bold">
+        Our <span class="text-blue-600">Consulting Approach</span>
+      </h2>
+      <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+        We follow a structured and results-driven approach to deliver real business impact.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="bg-gray-50 p-8 rounded-xl shadow">
+        <span class="text-blue-600 text-4xl font-bold">01</span>
+        <h3 class="text-xl font-semibold mt-4 mb-3">Analyze</h3>
+        <p class="text-gray-600">
+          We deeply analyze your business challenges and internal processes.
+        </p>
+      </div>
+
+      <div class="bg-gray-50 p-8 rounded-xl shadow">
+        <span class="text-blue-600 text-4xl font-bold">02</span>
+        <h3 class="text-xl font-semibold mt-4 mb-3">Strategize</h3>
+        <p class="text-gray-600">
+          We design tailored strategies aligned with your goals.
+        </p>
+      </div>
+
+      <div class="bg-gray-50 p-8 rounded-xl shadow">
+        <span class="text-blue-600 text-4xl font-bold">03</span>
+        <h3 class="text-xl font-semibold mt-4 mb-3">Deliver</h3>
+        <p class="text-gray-600">
+          We focus on execution and measurable results.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= WHY US ================= -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+    <div>
+      <img 
+        src="../images/busniess-clints.webp"
+        class="rounded-xl shadow-lg"
+        alt=" Why Choose Us"
+        loading="lazy" width="700" height="420"
+      />
+    </div>
+
+    <div>
+      <h2 class="text-3xl font-bold mb-6">
+        What Makes <span class="text-blue-600">us Different</span>
+      </h2>
+
+      <ul class="space-y-4 text-gray-700">
+        <li>✔ Data-driven decision making</li>
+        <li>✔ Industry experts with real experience</li>
+        <li>✔ Tailored solutions for each client</li>
+        <li>✔ Long-term partnerships, not one-time advice</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+ </main>
+<!--Aos js-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <!-- Custom JS -->
+<script src="../Javascript/Main.js"></script>
+</body>
+</html>

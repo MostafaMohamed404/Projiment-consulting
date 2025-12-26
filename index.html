@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Projiment Consulting provides professional business, financial, and HR consulting services to help companies grow, improve performance, and achieve sustainable success.">
+  <meta name="author" content="Eng:Mostafa Mohammed">
+  <meta name="keywords"
+    content="business consulting, financial consulting, HR consulting, Projiment Consulting, management solutions, business growth , financial planning, HR management , consulting services, sustainable growth ">
+  <link rel="icon" href="images/logo.webp" />
+  <title>Consulting Hero</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+   <!--Swiper JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="Css/styles.css" />
+</head>
+
+<body>
+  <header class="sticky top-0 z-50 bg-white shadow-sm py-4 md:py-6 ">
+    <div class="container-bs flex items-center justify-between px-4 sm:px-6 lg:px-0">
+
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <a href="index.html" class="flex-shrink-0">
+<img
+  src="images/logo.webp"
+  alt="Projiment logo"
+  width="160"
+  height="56"
+  class="h-11 sm:h-13 md:h-14 w-auto"
+>
+
+
+        </a>
+        <p class="text-2xl font-bold leading-tight">
+          Projiment
+          <span class="block text-[#1a73e8] font-semibold text-sm mt-0.5 leading-none">Services & Consulting</span>
+        </p>
+
+      </div>
+
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex items-center space-x-6 relative">
+
+        <a href="index.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Home</a>
+
+        <!-- HR Services Dropdown (Desktop) -->
+        <div class="group relative">
+          <a class="text-[#444] hover:text-[#1a73e8] font-medium transition flex items-center"
+            href="pages/services.html">
+            HR Services
+            <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+
+          <div class="absolute left-0 top-8 w-48 bg-white shadow-lg rounded-md py-3 opacity-0 invisible 
+                    group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="pages/details-services.html?service=recruitment"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Recruitment Services
+            </a>
+            <a href="pages/details-services.html?service=social-insurance"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Training & Development</a>
+            <a href="pages/details-services.html?service=payroll"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Payroll Management</a>
+            <a href="pages/details-services.html?service=social-insurance"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Social insurance & Laor Offies
+              Handling</a>
+            <a href="pages/details-services.html?service=personnel-affairs"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Personnel Affairs Services
+            </a>
+            <a href="pages/details-services.html?service=organizational-development"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Organizations Development
+            </a>
+            <a href="pages/details-services.html?service=hr-consulting"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              HR Audting Services
+            </a>
+            <a href="pages/details-services.html?service=hr-consulting"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Humen Resources Consulting
+            </a>
+          </div>
+        </div>
+
+        <a href="./pages/accounting.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Accounting</a>
+        <a href="./pages/financial.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Financial
+          Advisory</a>
+        <a href="./pages/ai-solutation.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">
+          AI Solutions </a>
+        <a href="./pages/clients.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Our Clients</a>
+        <a href="./pages/about.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">About us</a>
+        <a href="./pages/contact.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Contact us</a>
+
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="lg:hidden text-black" aria-label="open-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-[60%] bg-white transform translate-x-full 
+              transition-transform duration-300 ease-in-out lg:hidden shadow-lg z-40">
+
+      <div class="flex justify-end px-4 h-16 items-center">
+        <button id="close-menu" class="text-black" aria-label="close-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <ul class="flex flex-col text-[#444] mt-4">
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition">
+          <a href="index.html">Home</a>
+        </li>
+
+        <!-- HR Dropdown (Mobile) -->
+        <li class="border-b p-4">
+          <button id="mobile-hr-btn"
+            class="w-full text-left flex justify-between items-center hover:text-[#1a73e8] transition"
+            aria-label="open-hr-menu">
+            HR Services
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <ul id="mobile-hr-menu" class="hidden flex-col pl-6  mt-2 rounded-md">
+            <li><a href="./pages/details-services.html?service=recruitment"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Recruitment</a></li>
+            <li><a href="./pages/details-services.html?service=social-insurance"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Training & Development</a></li>
+            <li><a href="./pages/details-services.html?service=payroll"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Payroll Management</a></li>
+            <li><a href="./pages/details-services.html?service=social-insurance"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Social insurance & Laor Offies
+                Handling</a></li>
+            <li><a href="./pages/details-services.html?service=personnel-affairs"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Personnel Affairs Services</a></li>
+            <li><a href="./pages/details-services.html?service=organizational-development"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Organizations Development</a></li>
+            <li><a href="./pages/details-services.html?service=hr-audting"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">HR Audting Services</a></li>
+            <li><a href="./pages/details-services.html?service=hr-consulting"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Humen Resources Consulting</a></li>
+
+          </ul>
+        </li>
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="./pages/accounting.html">Accounting</a></li>
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="./pages/financial.html">Financial Advisory</a>
+        </li>
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="./pages/ai-solutation.html"> Ai Solutions </a>
+        </li>
+
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="./pages/clients.html">Our Clients</a></li>
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="./pages/about.html">About us</a></li>
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="./pages/contact.html">Contact us</a></li>
+
+      </ul>
+    </div>
+  </header>
+  <!-- HERO SECTION -->
+  <main>
+
+  <section class="relative w-full h-screen overflow-hidden ">
+
+    <div id="slider" class="relative w-full h-full">
+
+      <!-- SLIDE 1 -->
+      <div class="slide absolute inset-0 opacity-100 transition-opacity duration-1000">
+        <img src="images/slaide.webp" class="w-full h-full object-cover" loading="lazy"
+          alt="Business partnership meeting" width="1920" height="1080" />
+        <div class="absolute inset-0 bg-black/55"></div>
+        <div class="absolute inset-0 flex items-center">
+          <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="max-w-xl text-white">
+              <span class="uppercase tracking-widest text-gray-300 text-sm">Business Partnerships</span>
+              <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">
+                Building Trusted<br />Business Partnerships
+              </h1>
+              <p class="text-lg text-gray-200 mb-8">
+                We support organizations in forming strong partnerships and long-term collaborations that create real
+                value.
+              </p>
+              <a href="./pages/contact.html"
+                class="inline-block bg-blue-900 hover:bg-blue-800 px-8 py-3 rounded-2xl font-semibold"> Start
+                Conversation </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+        <img src="images/slaide2.webp" class="w-full h-full object-cover" loading="lazy"
+          alt="Team collaboration office" width="1920" height="1080" />
+        <div class="absolute inset-0 bg-black/55"></div>
+        <div class="absolute inset-0 flex items-center">
+          <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="max-w-xl text-white">
+              <span class="uppercase tracking-widest text-gray-300 text-sm">Advisory Collaboration</span>
+              <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6">
+                Working Closely<br />With Leadership Teams
+              </h2>
+              <p class="text-lg text-gray-200 mb-8">
+                Our consultants collaborate side by side with decision-makers to align goals, strategy, and execution.
+              </p>
+              <a href="./pages/contact.html"
+                class="inline-block bg-blue-900 hover:bg-blue-800 px-8 py-3 rounded-2xl font-semibold"> Start
+                Conversation </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+        <img src="images/slaide3.webp" class="w-full h-full object-cover" loading="lazy"
+          alt="Executive discussion boardroom" width="1920" height="1080" />
+        <div class="absolute inset-0 bg-black/55"></div>
+        <div class="absolute inset-0 flex items-center">
+          <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="max-w-xl text-white">
+              <span class="uppercase tracking-widest text-gray-300 text-sm">Executive Consulting</span>
+              <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6">
+                Aligning People,<br />Strategy & Growth
+              </h2>
+              <p class="text-lg text-gray-200 mb-8">
+                We help executive teams strengthen cooperation, accelerate growth, and build resilient organizations.
+              </p>
+              <a href="./pages/contact.html"
+                class="inline-block bg-blue-900 hover:bg-blue-800 px-8 py-3 rounded-2xl font-semibold"> Start
+                Conversation </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- DOT NAVIGATION -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-4 z-20">
+      <button class="dot w-3 h-3 rounded-full bg-white" data-slide="0" aria-label="Go to slide 1">
+      </button>
+
+      <button class="dot w-3 h-3 rounded-full bg-white/40" data-slide="1" aria-label="Go to slide 2">
+      </button>
+
+      <button class="dot w-3 h-3 rounded-full bg-white/40" data-slide="2" aria-label="Go to slide 3">
+      </button>
+    </div>
+
+
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="py-20 container-fluid-bs bg-[#f9f7f7]">
+    <div class="max-w-6xl mx-auto px-6 text-center container-bs">
+      <!-- Section Title -->
+      <h2 class="text-3xl sm:text-5xl font-bold text-gray-900 mb-6" data-aos="fade-up">
+        Our Key Features
+      </h2>
+      <p class="text-lg sm:text-xl text-gray-600 mb-12" data-aos="fade-up" data-aos-delay="100">
+        We focus on what matters most to help your business succeed.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+        <!-- Feature 1 -->
+        <div class="flex flex-col items-center p-8 bg-white rounded-3xl shadow-xl" data-aos="fade-up"
+          data-aos-delay="200">
+          <div class="text-blue-900 text-5xl mb-5">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Innovative Solutions</h3>
+          <p class="text-gray-600 text-center text-base sm:text-lg">
+            Creative and practical solutions tailored to your business challenges.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="flex flex-col items-center p-8 bg-white rounded-3xl shadow-xl" data-aos="fade-up"
+          data-aos-delay="400">
+          <div class="text-blue-900 text-5xl mb-5">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Business Growth</h3>
+          <p class="text-gray-600 text-center text-base sm:text-lg">
+            Strategies focused on sustainable growth and measurable results.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="flex flex-col items-center p-8 bg-white rounded-3xl shadow-xl" data-aos="fade-up"
+          data-aos-delay="600">
+          <div class="text-blue-900 text-5xl mb-5">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Trusted Partnerships</h3>
+          <p class="text-gray-600 text-center text-base sm:text-lg">
+            Building strong, long-term relationships based on trust and transparency.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT US SECTION -->
+  <section id="about" class="relative py-20 bg-[#f9f7f7] overflow-hidden container-fluid-bs">
+
+    <div class="max-w-7xl mx-auto px-6 relative container-bs">
+
+      <!-- SECTION TITLE -->
+      <div class="text-center mb-20">
+        <h2 data-aos="fade-down" class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900">
+          About us Our Company
+        </h2>
+        <div class="flex justify-center mt-5">
+          <span class="w-32 h-1 bg-blue-900 rounded-full"></span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+
+        <!-- LEFT CONTENT -->
+        <div data-aos="fade-right">
+
+          <!-- LABEL -->
+          <span class="px-4 py-1 text-sm rounded-full bg-blue-100 text-blue-900 font-semibold">
+            Trusted • Experienced • Professional
+          </span>
+
+          <h3 class="mt-6 text-3xl font-bold text-gray-900 leading-snug">
+            We don’t just guide companies —
+            <span class="text-blue-900">we transform them.</span>
+          </h3>
+
+          <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+            With deep expertise in <span class="font-semibold text-blue-900">HR, Accounting, Financial Advisory ,AI
+              Solutions</span>,
+            we help organizations improve efficiency, scale confidently, and grow sustainably.
+          </p>
+
+          <p class="mt-4 text-lg text-gray-600 leading-relaxed">
+            Our approach blends data, strategy, and long-term partnership.
+          </p>
+
+          <!-- FEATURE BULLETS -->
+          <div class="mt-10 space-y-5">
+            <div class="flex items-start gap-4">
+              <div class="w-5 h-5 bg-blue-900 rounded-full mt-1"></div>
+              <p class="text-lg text-gray-800 font-medium">Modern, data-driven strategies.</p>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-5 h-5 bg-blue-900 rounded-full mt-1"></div>
+              <p class="text-lg text-gray-800 font-medium">Tailored solutions for every business size.</p>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-5 h-5 bg-blue-900 rounded-full mt-1"></div>
+              <p class="text-lg text-gray-800 font-medium">Long-term partnership and support.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT VISUAL / IMAGE STACK -->
+        <div data-aos="fade-left" class="relative">
+
+          <!-- Floating Card -->
+          <div
+            class="absolute -top-10 -left-10 w-40 h-40 bg-white/40 border backdrop-blur-xl rounded-3xl shadow-xl hidden lg:block">
+          </div>
+
+          <div class="grid grid-cols-2 gap-6">
+
+            <!-- IMAGE 1 -->
+            <div class="rounded-3xl overflow-hidden shadow-xl border border-white/30 bg-white/30 backdrop-blur-xl">
+              <img class="w-full h-64 object-cover" src="images/about-section.webp" alt="Consulting team collaborating"
+               loading="lazy" width="600" height="256">
+            </div>
+
+            <!-- IMAGE 2 (OFFSET) -->
+            <div
+              class="rounded-3xl overflow-hidden shadow-xl border border-white/30 bg-white/30 backdrop-blur-xl mt-12">
+              <img class="w-full h-64 object-cover" src="images/about-2.webp" alt="Business meeting discussion"
+               loading="lazy" width="600" height="256">
+            </div>
+
+          </div>
+
+          <!-- Floating Element -->
+          <div class="absolute -bottom-10 -right-10 w-36 h-36 bg-blue-900/20 blur-2xl rounded-full"></div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- SERVICES SECTION -->
+  <section class="py-20 bg-[#f9f7f7] container-fluid-bs">
+
+    <!-- ====== TITLE ====== -->
+    <div class="text-center mb-16">
+      <p class="text-sm tracking-[3px] text-gray-600 font-semibold">
+        OUR SERVICES
+      </p>
+      <h2 class="text-4xl font-extrabold text-[#3F3D56] mt-2">
+        Business <span class="text-[#1E40AF]">Shaped</span> Solution
+      </h2>
+    </div>
+
+    <!-- ====== CARDS GRID ====== -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 
+              max-w-[1200px] mx-auto px-6">
+
+      <!-- ====== CARD 1 ====== -->
+      <div class="w-full max-w-[330px] mx-auto bg-white rounded-2xl 
+                shadow-[0_20px_70px_rgba(0,0,0,0.05)]
+                p-7 md:p-10 flex flex-col text-center md:text-left
+                hover:shadow-[0_25px_90px_rgba(0,0,0,0.10)]
+                transition">
+
+        <img src="images/service-icon-7.svg" class="w-14 h-14 mb-5 mx-auto md:mx-0" alt="Human Resources service icon"
+          loading="lazy" width="56" height="56" />
+
+        <a href="pages/services.html" class="text-xl font-semibold text-[#3F3D56] hover:text-[#1E40AF] transition">
+          Humen Resources Services
+        </a>
+
+        <p class="text-gray-500 mt-4 leading-relaxed">
+          Get some soul healing and guidance for your future career and vocational directions.
+        </p>
+
+        <p>
+          <a href="pages/services.html" class="mt-6 inline-block bg-[#3F3D56] text-white px-6 py-2 rounded-lg text-sm font-semibold
+              hover:bg-[#1E40AF] transition mx-auto md:mx-0">
+            Read More
+            <span class="sr-only"> about our services</span>
+          </a>
+        </p>
+
+      </div>
+
+      <!-- ====== CARD 2 ====== -->
+      <div class="w-full max-w-[330px] mx-auto bg-white rounded-2xl 
+                shadow-[0_20px_70px_rgba(0,0,0,0.05)]
+                p-7 md:p-10 flex flex-col text-center md:text-left
+                hover:shadow-[0_25px_90px_rgba(0,0,0,0.10)]
+                transition">
+
+        <img src="images/Accountingicon-4.svg" class="w-14 h-14 mb-5 mx-auto md:mx-0" alt="Accounting service icon"
+          loading="lazy" width="56" height="56" />
+
+        <a href="pages/accounting.html" class="text-xl font-semibold text-[#3F3D56] hover:text-[#1E40AF] transition">
+          Accounting Services
+        </a>
+
+        <p class="text-gray-500 mt-4 leading-relaxed">
+          Get some soul healing and guidance for your future career and vocational directions.
+        </p>
+
+        <p>
+          <a href="pages/accounting.html" class="mt-6 inline-block bg-[#3F3D56] text-white px-6 py-2 rounded-lg text-sm font-semibold
+              hover:bg-[#1E40AF] transition mx-auto md:mx-0">
+            Read More
+            <span class="sr-only"> about accounting services</span>
+          </a>
+        </p>
+
+      </div>
+
+      <!-- ====== CARD 3 ====== -->
+      <div class="w-full max-w-[330px] mx-auto bg-white rounded-2xl 
+                shadow-[0_20px_70px_rgba(0,0,0,0.05)]
+                p-7 md:p-10 flex flex-col text-center md:text-left
+                hover:shadow-[0_25px_90px_rgba(0,0,0,0.10)]
+                transition">
+
+        <img src="images/Financial-icon-6.svg" class="w-14 h-14 mb-5 mx-auto md:mx-0"
+          alt="Financial advisory service icon"  loading="lazy" width="56" height="56" />
+
+        <a href="pages/financial.html" class="text-xl font-semibold text-[#3F3D56] hover:text-[#1E40AF] transition">
+          Financial Advisory
+        </a>
+
+        <p class="text-gray-500 mt-4 leading-relaxed">
+          Get some soul healing and guidance for your future career and vocational directions.
+        </p>
+
+        <p>
+          <a href="pages/financial.html" class="mt-6 inline-block bg-[#3F3D56] text-white px-6 py-2 rounded-lg text-sm font-semibold
+              hover:bg-[#1E40AF] transition mx-auto md:mx-0">
+            Read More
+            <span class="sr-only"> about financial consulting services</span>
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FAQ SECTION -->
+<section class="py-20 relative bg-[#f9f7f7] container-fluid-bs lg:overflow-hidden">
+
+  <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center container-bs">
+
+    <!-- TEXT + FAQ -->
+    <div>
+      <span class="text-gray-600 font-semibold tracking-[2px] uppercase text-sm mb-2 block">
+        Why Choose Us
+      </span>
+
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-snug mb-10">
+        Key Reasons to Choose Our Consulting Services
+      </h2>
+
+      <div class="divide-y border-y">
+
+        <!-- ITEM 1 -->
+        <div class="faq-item py-4 sm:py-6 cursor-pointer">
+          <div class="flex justify-between items-start gap-4">
+            <h3 class="font-semibold text-base sm:text-lg leading-relaxed">
+              Strategic Expertise
+            </h3>
+
+            <svg class="icon w-5 h-5 mt-1 flex-shrink-0 transition duration-300"
+                 fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path class="plus" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14" />
+              <path class="minus hidden" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+            </svg>
+          </div>
+
+          <p class="faq-answer text-gray-600 text-sm sm:text-base mt-4 leading-relaxed hidden">
+            Our consultants provide actionable strategies tailored to your company's unique goals and challenges.
+          </p>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="faq-item py-4 sm:py-6 cursor-pointer">
+          <div class="flex justify-between items-start gap-4">
+            <h3 class="font-semibold text-base sm:text-lg leading-relaxed">
+              Innovative Solutions
+            </h3>
+
+            <svg class="icon w-5 h-5 mt-1 flex-shrink-0 transition duration-300"
+                 fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path class="plus" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14" />
+              <path class="minus hidden" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+            </svg>
+          </div>
+
+          <p class="faq-answer text-gray-600 text-sm sm:text-base mt-4 leading-relaxed hidden">
+            We deliver creative, data-driven solutions to optimize performance and drive business growth.
+          </p>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="faq-item py-4 sm:py-6 cursor-pointer">
+          <div class="flex justify-between items-start gap-4">
+            <h3 class="font-semibold text-base sm:text-lg leading-relaxed">
+              Client-Centric Approach
+            </h3>
+
+            <svg class="icon w-5 h-5 mt-1 flex-shrink-0 transition duration-300"
+                 fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path class="plus" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14" />
+              <path class="minus hidden" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+            </svg>
+          </div>
+
+          <p class="faq-answer text-gray-600 text-sm sm:text-base mt-4 leading-relaxed hidden">
+            Our focus is on building lasting partnerships by understanding client needs and delivering measurable results.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- IMAGE SIDE -->
+    <div class="relative flex justify-center mt-12 lg:mt-0">
+
+      <img
+        src="images/faq.webp"
+        alt="Consulting illustration"
+        width="500"
+        height="500"
+        loading="lazy"
+        class="relative z-10 w-full max-w-sm sm:max-w-md"
+      >
+
+      <!-- Decorative shapes (hidden on mobile) -->
+      <img
+        src="images/Decoration1.webp"
+        alt=""
+        loading="lazy"
+        class="hidden sm:block absolute -left-8 top-20 w-24 sm:w-28 pointer-events-none select-none"
+      >
+
+      <img
+        src="images/Decoration2.webp"
+        alt=""
+        width="112"
+        height="112"
+        loading="lazy"
+        class="hidden sm:block absolute left-3 bottom-20 w-24 sm:w-28 pointer-events-none select-none"
+      >
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- CASE STUDIES SECTION -->
+<section class="py-20 bg-[#f9f7f7]">
+  <div class="max-w-7xl mx-auto px-6 container-bs">
+
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+      Trusted by Leading Companies
+    </h2>
+
+    <div class="swiper clientsSwiper" data-aos="fade-up">
+      <div class="swiper-wrapper items-center">
+
+        <!-- Logo -->
+        <div class="swiper-slide flex justify-center">
+          <img src="images/Our-Clint.webp"
+               alt="Regima"
+               loading="lazy"
+               width="140"
+               height="80"
+               class="object-contain  "/>
+        </div>
+
+        <div class="swiper-slide flex justify-center">
+          <img src="images/Our-Clint-2.webp"
+               alt="Landscape"
+               loading="lazy"
+               width="140"
+               height="80"
+               class="object-contain "/>
+        </div>
+
+        <div class="swiper-slide flex justify-center">
+          <img src="images/Our-Clint-3.webp"
+               alt="Home Forex"
+               loading="lazy"
+               width="140"
+               height="80"
+               class="object-contain "/>
+        </div>
+
+        <div class="swiper-slide flex justify-center">
+          <img src="images/Our-Clint-4.webp"
+               alt="Next Engine"
+               loading="lazy"
+               width="140"
+               height="80"
+               class="object-contain  "/>
+        </div>
+
+        <div class="swiper-slide flex justify-center">
+          <img src="images/Our-Clint-5.webp"
+               alt="Monkey Ters"
+               loading="lazy"
+               width="140"
+               height="80"
+               class="object-contain  "/>
+        </div>
+
+        <div class="swiper-slide flex justify-center">
+          <img src="images/Our-Clint-6.webp"
+               alt="Fitness Freaks"
+               loading="lazy"
+               width="140"
+               height="80"
+               class="object-contain "/>
+        </div>
+        <div class="swiper-slide flex justify-center">
+          <img src="images/clint7.jpeg"
+               alt="Fitness Freaks"
+               loading="lazy"
+               width="140"
+               height="80"
+               class="object-contain "/>
+        </div>
+        <div class="swiper-slide flex justify-center">
+          <img src="images/clint8.svg"
+               alt="Fitness Freaks"
+               loading="lazy"
+               width="140"
+               height="80"
+               class="object-contain "/>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!--Cta-->
+  <section class="relative  py-24 bg-gradient-to-r from-[#1E3A8A] via-[#273B6A] to-[#1E3A8A] overflow-hidden ">
+
+    <!-- Background Image -->
+    <img src="images/cta-background.webp"
+      class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none" loading="lazy"
+      alt="Background Consulting Image">
+
+    <div
+      class="max-w-6xl mx-auto px-6 text-center lg:text-left flex flex-col lg:flex-row items-center justify-between gap-10 relative z-10">
+
+      <!-- CTA Text -->
+      <div data-aos="fade-right" class="text-white">
+        <h2 class="text-4xl lg:text-5xl font-extrabold mb-4">
+          Ready to Transform Your Business?
+        </h2>
+        <p class="text-white/80 text-lg mb-6">
+          Partner with our expert consultants to unlock growth, streamline operations, and maximize your potential.
+        </p>
+        <a href="./pages/contact.html"
+          class="inline-block bg-white text-[#1E3A8A] font-semibold px-8 py-4 rounded-2xl shadow-lg hover:bg-gray-100 transition">
+          Get Started
+        </a>
+      </div>
+
+      <!-- Decorative Shapes -->
+      <div class="relative w-full max-w-md" data-aos="fade-left">
+        <div class="absolute -top-8 -left-8 w-24 h-24 bg-white/20 rounded-full pointer-events-none"></div>
+        <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-white/10 rounded-full pointer-events-none"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+    </main>
+  <footer class="bg-[#F5F5F5] text-gray-700 px-6 md:px-16 py-12 border-t container-fluid-bs">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 container-bs">
+
+      <!-- Column 1 -->
+      <div>
+        <h3 class="text-black text-lg font-semibold mb-4">About Us</h3>
+        <p class="text-sm leading-6 text-gray-600">
+          We are a consulting agency helping businesses improve performance,
+          build strong strategies, and accelerate growth through expert guidance.
+        </p>
+
+        <!-- Social Icons -->
+        <div class="flex items-center gap-4 mt-4 text-gray-800 text-xl">
+          <button type="button" aria-label="Open Facebook"><i class="fab fa-facebook"></i></button>
+          <button type="button" aria-label="Open LinkedIn"><i class="fab fa-linkedin"></i></button>
+          <button type="button" aria-label="Open Instagram"><i class="fab fa-instagram"></i></button>
+          <button type="button" aria-label="Open Twitter"><i class="fab fa-twitter"></i></button>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div>
+        <h3 class="text-black text-lg font-semibold mb-4">Services</h3>
+        <ul class="space-y-2 text-sm">
+          <li><button type="button" class="hover:text-black">Business Consulting</button></li>
+          <li><button type="button" class="hover:text-black">Financial Planning</button></li>
+          <li><button type="button" class="hover:text-black">Market Analysis</button></li>
+          <li><button type="button" class="hover:text-black">Strategy Development</button></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div>
+        <h3 class="text-black text-lg font-semibold mb-4">Resources</h3>
+        <ul class="space-y-2 text-sm">
+          <li><button aria-label="blog" type="button" class="hover:text-black">Blog</button></li>
+          <li><button aria-label="case-studies" type="button" class="hover:text-black">Case Studies</button></li>
+          <li><button aria-label="Clinet Success" type="button" class="hover:text-black">Client Success</button></li>
+          <li><button aria-label="FAQ" type="button" class="hover:text-black">FAQs</button></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div>
+        <h3 class="text-black text-lg font-semibold mb-4">Newsletter</h3>
+        <p class="text-sm mb-4 text-gray-600">
+          Subscribe to get expert insights, consulting tips, and business strategies.
+        </p>
+
+        <!-- Email Input -->
+        <div class="flex">
+          <input type="email" placeholder="Your email address"
+            class="px-4 py-2 w-full border border-gray-300 rounded-l text-gray-900">
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-r hover:bg-blue-700" type="button"
+            aria-label="Subscribe">
+            Send
+          </button>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="mt-4">
+          <p class="text-black text-sm mb-2">Follow us:</p>
+          <div class="flex items-center gap-4 text-gray-800 text-xl">
+            <button type="button" aria-label="Open LinkedIn"><i class="fab fa-linkedin"></i></button>
+            <button type="button" aria-label="Open Facebook"><i class="fab fa-facebook"></i></button>
+            <button type="button" aria-label="Open Instagram"><i class="fab fa-instagram"></i></button>
+            <button type="button" aria-label="Open Twitter"><i class="fab fa-twitter"></i></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center text-sm text-gray-600 mt-10">
+
+      © 2025 Consulting Agency. All Rights Reserved.
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- JS Libraries -->
+   <!--swiper js-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Custom JS -->
+  <script src="Javascript/Main.js"></script>
+
+
+</body>
+
+</html>

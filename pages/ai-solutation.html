@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>AI Solutions | Artificial Intelligence, Automation & Business Innovation</title>
+  <meta name="description" content="Explore advanced AI solutions including automation, machine learning, business intelligence, and digital transformation to help companies optimize performance and drive innovation.">
+  <meta name="keywords" content="AI Solutions, Artificial Intelligence, Business Automation, Machine Learning, Business Intelligence, Digital Transformation, AI Consulting">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Projiment Consulting">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI Solutions | Business Automation & Innovation">
+  <meta property="og:description" content="Discover AI-driven automation, machine learning, analytics, and digital innovation services for business growth.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourwebsite.com/ai-solutions">
+  <meta property="og:image" content="https://yourwebsite.com/images/ai-solutions-banner.jpg">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+
+  <!-- Favicon -->
+<link rel="icon" href="../images/logo.webp">
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../Css/styles.css">
+</head>
+
+
+<body>
+       <header class="sticky top-0 z-50 bg-white shadow-sm py-4 md:py-6 ">
+    <div class="container-bs flex items-center justify-between px-4 sm:px-6 lg:px-0">
+
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <a href="index.html" class="flex-shrink-0">
+          <img src="../images/logo.webp" alt="Projiment logo"
+            class="h-11 sm:h-13 md:h-14 w-auto" width="180" height="56" />
+        </a>
+        <p class="text-2xl font-bold leading-tight">
+          Projiment
+          <span class="block text-[#1a73e8] font-semibold text-sm mt-0.5 leading-none">Services & Consulting</span>
+        </p>
+
+      </div>
+
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex items-center space-x-6 relative">
+
+        <a href="../index.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Home</a>
+
+        <!-- HR Services Dropdown (Desktop) -->
+        <div class="group relative">
+          <a class="text-[#444] hover:text-[#1a73e8] font-medium transition flex items-center"
+            href="services.html">
+            HR Services
+            <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+
+          <div class="absolute left-0 top-8 w-48 bg-white shadow-lg rounded-md py-3 opacity-0 invisible 
+                    group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="pages/details-services.html?service=recruitment"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Recruitment Services
+            </a>
+            <a href="pages/details-services.html?service=social-insurance"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Training & Development</a>
+            <a href="pages/details-services.html?service=payroll"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Payroll Management</a>
+            <a href="pages/details-services.html?service=social-insurance"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Social insurance & Laor Offies
+              Handling</a>
+            <a href="pages/details-services.html?service=personnel-affairs"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Personnel Affairs Services
+            </a>
+            <a href="pages/details-services.html?service=organizational-development"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Organizations Development
+            </a>
+            <a href="pages/details-services.html?service=hr-consulting"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              HR Audting Services
+            </a>
+            <a href="pages/details-services.html?service=hr-consulting"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Humen Resources Consulting
+            </a>
+          </div>
+        </div>
+
+        <a href="../pages/accounting.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Accounting</a>
+        <a href="../pages/financial.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Financial
+          Advisory</a>
+        <a href="../pages/ai-solutation.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">
+          AI Solutions </a>
+        <a href="../pages/clients.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Our Clients</a>
+        <a href="../pages/about.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">About us</a>
+        <a href="../pages/contact.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Contact us</a>
+
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="lg:hidden text-black" aria-label="open-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-[60%] bg-white transform translate-x-full 
+              transition-transform duration-300 ease-in-out lg:hidden shadow-lg z-40">
+
+      <div class="flex justify-end px-4 h-16 items-center">
+        <button id="close-menu" class="text-black" aria-label="close-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <ul class="flex flex-col text-[#444] mt-4">
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition">
+          <a href="../index.html">Home</a>
+        </li>
+
+        <!-- HR Dropdown (Mobile) -->
+        <li class="border-b p-4">
+          <button id="mobile-hr-btn"
+            class="w-full text-left flex justify-between items-center hover:text-[#1a73e8] transition"
+            aria-label="open-hr-menu">
+            HR Services
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <ul id="mobile-hr-menu" class="hidden flex-col pl-6  mt-2 rounded-md">
+            <li><a href="./pages/details-services.html?service=recruitment"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Recruitment</a></li>
+            <li><a href="./pages/details-services.html?service=social-insurance"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Training & Development</a></li>
+            <li><a href="./pages/details-services.html?service=payroll"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Payroll Management</a></li>
+            <li><a href="./pages/details-services.html?service=social-insurance"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Social insurance & Laor Offies
+                Handling</a></li>
+            <li><a href="./pages/details-services.html?service=personnel-affairs"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Personnel Affairs Services</a></li>
+            <li><a href="./pages/details-services.html?service=organizational-development"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Organizations Development</a></li>
+            <li><a href="./pages/details-services.html?service=hr-audting"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">HR Audting Services</a></li>
+            <li><a href="./pages/details-services.html?service=hr-consulting"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Humen Resources Consulting</a></li>
+
+          </ul>
+        </li>
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="accounting.html">Accounting</a></li>
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="financial.html">Financial Advisory</a>
+        </li>
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="ai-solutation.html"> Ai Solutions </a>
+        </li>
+
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="clients.html">Our Clients</a></li>
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="about.html">About us</a></li>
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="contact.html">Contact us</a></li>
+
+      </ul>
+    </div>
+  </header>
+   <main>
+<!-- ================= HERO ================= -->
+<section class="relative h-[400px] flex items-center justify-center text-left bg-cover bg-center"
+  style="background-image: url('../images/Ai-background2.webp');">
+
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <div class="container mx-auto relative text-left z-10 px-6 lg:px-20">
+
+    <h1 class="text-white text-4xl sm:text-5xl font-extrabold mb-4" data-aos="fade-up">
+      AI Solutions
+    </h1>
+
+    <p class="text-gray-200 text-lg sm:text-xl max-w-2xl text-left  mx-auto leading-relaxed mb-6"
+       data-aos="fade-up" data-aos-delay="100">
+      We offer cutting-edge AI solutions tailored to meet the unique needs of your business.
+      Our team leverages the latest AI technologies to drive innovation and efficiency.
+    </p>
+
+
+
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-6 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+    <div data-aos="fade-right">
+      <p class="text-sm tracking-[3px] text-blue-500 font-semibold mb-3">
+        ABOUT AI SOLUTIONS
+      </p>
+
+      <h2 class="text-4xl font-extrabold text-gray-900 mb-6 leading-tight">
+        Intelligent AI Solutions<br>
+        Built for Real Business Impact
+      </h2>
+
+      <p class="text-gray-600 leading-relaxed mb-6">
+        Our AI solutions help businesses automate processes, gain insights from data,
+        and make smarter decisions using advanced technologies.
+      </p>
+
+      <p class="text-gray-600 leading-relaxed mb-8">
+        From predictive analytics to intelligent automation, we deliver scalable
+        AI systems tailored to your business needs.
+      </p>
+
+      <a href="../contact.html"
+         class="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition">
+        Learn More
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="relative" data-aos="fade-left">
+      <img
+        src="../images/Ai-Solutions.webp"
+        alt="AI Solutions"
+         loading="lazy"
+        class="rounded-2xl shadow-xl w-full object-cover"
+      />
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+<section class="py-24 bg-gray-50">
+  <div class="container mx-auto px-6 lg:px-20">
+
+    <!-- ====== TITLE ====== -->
+    <div class="text-center mb-20" data-aos="fade-up">
+      <p class="text-sm tracking-widest text-blue-600 font-semibold mb-3">
+        OUR SERVICES
+      </p>
+      <h2 class="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-5">
+        AI Solutions We Provide
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        Smart AI-powered services built to automate workflows, enhance data accuracy,
+        and deliver scalable solutions that drive real business growth.
+      </p>
+    </div>
+
+    <!-- ====== SERVICES (FLEX) ====== -->
+    <div class="flex flex-wrap gap-5 justify-center">
+
+      <!-- ====== Card 1 ====== -->
+      <div
+        class="flex flex-col bg-white rounded-3xl p-10 shadow-lg hover:shadow-2xl transition duration-500 w-full sm:w-[48%] lg:w-[23%]"
+        data-aos="fade-up"
+      >
+        <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 mb-6 text-3xl">
+          <i class="fa-solid fa-pen-to-square"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">
+          Data Annotation
+        </h3>
+
+        <p class="text-gray-600 leading-relaxed mb-6 flex-grow">
+          High-quality data annotation services that ensure precise, structured,
+          and reliable datasets essential for training powerful AI and machine learning models.
+        </p>
+
+        <a
+          href="details-ai.html?ai=data-annotation"
+          class="text-blue-600 font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all"
+        >
+          View AI Service Details
+          <i class="fa-solid fa-arrow-right text-sm"></i>
+        </a>
+      </div>
+
+      <!-- ====== Card 2 ====== -->
+      <div
+        class="flex flex-col bg-white rounded-3xl p-10 shadow-lg hover:shadow-2xl transition duration-500 w-full sm:w-[48%] lg:w-[23%]"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 mb-6 text-3xl">
+           <!--i need icon related to data -->
+          <i class="fa-solid fa-tags"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">
+          Data Labeling
+        </h3>
+
+        <p class="text-gray-600 leading-relaxed mb-6 flex-grow">
+          Accurate and scalable data labeling solutions designed to accelerate AI training,
+          improve model performance, and reduce operational overhead.
+        </p>
+
+        <a
+          href="details-ai.html?ai=data-labeling"
+          class="text-blue-600 font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all"
+        >
+          View AI Service Details
+          <i class="fa-solid fa-arrow-right text-sm"></i>
+        </a>
+      </div>
+
+      <!-- ====== Card 3 ====== -->
+          <div
+        class="flex flex-col bg-white rounded-3xl p-10 shadow-lg hover:shadow-2xl transition duration-500 w-full sm:w-[48%] lg:w-[23%]"
+        data-aos="fade-up"
+      >
+        <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 mb-6 text-3xl">
+           <!--i need icon related to data collection anthor database -->
+           <i class="fa-solid fa-database"></i>
+
+        </div>
+
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">
+          Data Collection
+        </h3>
+
+        <p class="text-gray-600 leading-relaxed mb-6 flex-grow">
+          Comprehensive data collection services that gather diverse,
+          high-quality datasets to fuel effective AI model training and development.
+        </p>
+
+        <a
+          href="details-ai.html?ai=data-collection"
+          class="text-blue-600 font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all"
+        >
+          View AI Service Details
+          <i class="fa-solid fa-arrow-right text-sm"></i>
+        </a>
+      </div>
+
+      <!-- ====== Card 4 ====== -->
+          <div
+        class="flex flex-col bg-white rounded-3xl p-10 shadow-lg hover:shadow-2xl transition duration-500 w-full sm:w-[48%] lg:w-[23%]"
+        data-aos="fade-up"
+      >
+        <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 mb-6 text-3xl">
+          <i class="fa-solid fa-robot"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">
+         model training
+        </h3>
+
+        <p class="text-gray-600 leading-relaxed mb-6 flex-grow">
+          End-to-end model training services that optimize AI algorithms
+          for accuracy, efficiency, and real-world application across various industries.
+        </p>
+
+        <a
+          href="details-ai.html?ai=model-training"
+          class="text-blue-600 font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all"
+        >
+          View AI Service Details
+          <i class="fa-solid fa-arrow-right text-sm"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="py-24 bg-white">
+  <div class="container mx-auto px-6 lg:px-20">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Left Text -->
+      <div data-aos="fade-right">
+        <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          Why Choose <span class="text-blue-600">Our AI Solutions?</span>
+        </h2>
+        <p class="text-gray-600 text-lg mb-10 leading-relaxed">
+          We combine advanced AI technologies with deep industry expertise to deliver solutions
+          that are reliable, scalable, and tailored to your business needs.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+
+          <!-- Stat 1 -->
+          <div class="bg-gray-50 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition">
+            <h3 class="text-3xl font-bold text-blue-600 mb-2">100+</h3>
+            <p class="text-gray-600 text-sm">Projects Delivered</p>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="bg-gray-50 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition">
+            <h3 class="text-3xl font-bold text-blue-600 mb-2">50+</h3>
+            <p class="text-gray-600 text-sm">Satisfied Clients</p>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="bg-gray-50 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition">
+            <h3 class="text-3xl font-bold text-blue-600 mb-2">10+</h3>
+            <p class="text-gray-600 text-sm">AI Experts</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right Image -->
+      <div class="relative" data-aos="fade-left">
+        <img
+          src="../images/AI-Stats.webp"
+          alt="AI Stats"
+          loading="lazy"
+          class="rounded-3xl shadow-2xl w-full"
+        />
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ================= CTA ================= -->
+<section class="py-16 bg-blue-500 text-white">
+  <div class="container mx-auto px-6 lg:px-20 text-center">
+
+    <!-- Title -->
+    <h2 class="text-3xl lg:text-4xl font-extrabold mb-4" data-aos="fade-up">
+      Transform Your Business with AI
+    </h2>
+
+    <!-- Subtitle -->
+    <p class="text-gray-100 text-base lg:text-lg mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+      Leverage our cutting-edge AI solutions to improve efficiency, automate processes, and drive growth.
+    </p>
+
+    <!-- CTA Button -->
+    <a href="../contact.html"
+       class="inline-block bg-white text-blue-600 font-semibold px-8 py-3 rounded-full shadow-md hover:shadow-lg transition transform hover:-translate-y-1"
+       data-aos="fade-up" data-aos-delay="200">
+      Request a Demo
+      <i class="fa-solid fa-arrow-right ml-2"></i>
+    </a>
+
+  </div>
+</section>
+
+
+ </main>
+<!-- ================= SCRIPTS ================= -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="../Javascript/Main.js"></script>
+
+
+</body>
+</html>

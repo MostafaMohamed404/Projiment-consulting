@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Contact Us | Get in Touch With Projiment Consulting</title>
+  <meta name="description" content="Contact Projiment Consulting for business inquiries, service requests, and support. We're here to help with HR, financial advisory, accounting, and consulting services.">
+  <meta name="keywords" content="Contact Projiment, Contact Consulting, Business Inquiry, HR Contact, Financial Advisory Contact">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Projiment Consulting">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Projiment Consulting">
+  <meta property="og:description" content="Reach out to our consulting team for business support, HR services, and financial advisory solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourwebsite.com/contact">
+  <meta property="og:image" content="https://yourwebsite.com/images/contact-banner.jpg">
+
+  <!-- Favicon -->
+<link rel="icon" href="../images/logo.webp">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../Css/styles.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+         <header class="sticky top-0 z-50 bg-white shadow-sm py-4 md:py-6 ">
+    <div class="container-bs flex items-center justify-between px-4 sm:px-6 lg:px-0">
+
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <a href="index.html" class="flex-shrink-0">
+          <img src="../images/logo.webp" alt="Projiment logo"
+            class="h-11 sm:h-13 md:h-14 w-auto" />
+        </a>
+        <p class="text-2xl font-bold leading-tight">
+          Projiment
+          <span class="block text-[#1a73e8] font-semibold text-sm mt-0.5 leading-none">Services & Consulting</span>
+        </p>
+
+      </div>
+
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex items-center space-x-6 relative">
+
+        <a href="../index.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Home</a>
+
+        <!-- HR Services Dropdown (Desktop) -->
+        <div class="group relative">
+          <a class="text-[#444] hover:text-[#1a73e8] font-medium transition flex items-center"
+            href="services.html">
+            HR Services
+            <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+
+          <div class="absolute left-0 top-8 w-48 bg-white shadow-lg rounded-md py-3 opacity-0 invisible 
+                    group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="pages/details-services.html?service=recruitment"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Recruitment Services
+            </a>
+            <a href="pages/details-services.html?service=social-insurance"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Training & Development</a>
+            <a href="pages/details-services.html?service=payroll"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Payroll Management</a>
+            <a href="pages/details-services.html?service=social-insurance"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Social insurance & Laor Offies
+              Handling</a>
+            <a href="pages/details-services.html?service=personnel-affairs"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Personnel Affairs Services
+            </a>
+            <a href="pages/details-services.html?service=organizational-development"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Organizations Development
+            </a>
+            <a href="pages/details-services.html?service=hr-consulting"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              HR Audting Services
+            </a>
+            <a href="pages/details-services.html?service=hr-consulting"
+              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
+              Humen Resources Consulting
+            </a>
+          </div>
+        </div>
+
+        <a href="../pages/accounting.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Accounting</a>
+        <a href="../pages/financial.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Financial
+          Advisory</a>
+        <a href="../pages/ai-solutation.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">
+          AI Solutions </a>
+        <a href="../pages/clients.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Our Clients</a>
+        <a href="../pages/about.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">About us</a>
+        <a href="../pages/contact.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Contact us</a>
+
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="lg:hidden text-black" aria-label="open-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-[60%] bg-white transform translate-x-full 
+              transition-transform duration-300 ease-in-out lg:hidden shadow-lg z-40">
+
+      <div class="flex justify-end px-4 h-16 items-center">
+        <button id="close-menu" class="text-black" aria-label="close-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <ul class="flex flex-col text-[#444] mt-4">
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition">
+          <a href="../index.html">Home</a>
+        </li>
+
+        <!-- HR Dropdown (Mobile) -->
+        <li class="border-b p-4">
+          <button id="mobile-hr-btn"
+            class="w-full text-left flex justify-between items-center hover:text-[#1a73e8] transition"
+            aria-label="open-hr-menu">
+            HR Services
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <ul id="mobile-hr-menu" class="hidden flex-col pl-6  mt-2 rounded-md">
+            <li><a href="./pages/details-services.html?service=recruitment"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Recruitment</a></li>
+            <li><a href="./pages/details-services.html?service=social-insurance"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Training & Development</a></li>
+            <li><a href="./pages/details-services.html?service=payroll"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Payroll Management</a></li>
+            <li><a href="./pages/details-services.html?service=social-insurance"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Social insurance & Laor Offies
+                Handling</a></li>
+            <li><a href="./pages/details-services.html?service=personnel-affairs"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Personnel Affairs Services</a></li>
+            <li><a href="./pages/details-services.html?service=organizational-development"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Organizations Development</a></li>
+            <li><a href="./pages/details-services.html?service=hr-audting"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">HR Audting Services</a></li>
+            <li><a href="./pages/details-services.html?service=hr-consulting"
+                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Humen Resources Consulting</a></li>
+
+          </ul>
+        </li>
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="accounting.html">Accounting</a></li>
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="financial.html">Financial Advisory</a>
+        </li>
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="ai-solutation.html"> Ai Solutions </a>
+        </li>
+
+
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="clients.html">Our Clients</a></li>
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="about.html">About us</a></li>
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="contact.html">Contact us</a></li>
+
+      </ul>
+    </div>
+  </header>
+   <main>
+<section class="relative h-[400px] flex items-center bg-cover bg-center"
+  style="background-image: url('../images/contact.jpg');">
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <div class="container mx-auto relative z-10 px-6 lg:px-20 text-center lg:text-left">
+    
+    <!-- Title -->
+    <h1 class="text-white text-4xl sm:text-5xl font-extrabold mb-4" data-aos="fade-up">
+      Contact Us
+    </h1>
+
+    <!-- Description -->
+    <p class="text-gray-200 text-lg sm:text-xl max-w-3xl leading-relaxed mb-6" data-aos="fade-up" data-aos-delay="100">
+      We're here to support your business every step of the way.  
+      Feel free to reach out to our team for inquiries, consultations, or partnership opportunities.  
+      Let’s start building something great together.
+    </p>
+
+
+
+  </div>
+</section>
+
+<section class="py-20 bg-white">
+  <div class="container-bs mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+
+    <!-- CARD 1 -->
+    <div class="p-8 border rounded-xl shadow-sm hover:shadow-md transition bg-white"
+      data-aos="zoom-in">
+
+      <div class="flex items-center gap-4 mb-6">
+        <div class="text-blue-600 text-4xl">
+          <i class="fa-solid fa-phone-volume"></i>
+        </div>
+        <div>
+          <p class="text-gray-500 text-sm">24/7 Service</p>
+          <h3 class="text-xl font-semibold text-blue-600">Call Us Today</h3>
+        </div>
+      </div>
+
+      <div class="border-b border-blue-500 w-1/3 mb-4"></div>
+
+      <a href="tel:+201110240433" class="text-gray-600 hover:text-[#1a73e8]">+0201110240433</a>
+      <a href="tel:+201116474714" class="text-gray-600 hover:text-[#1a73e8]">+020116474714</a>
+
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="p-8 border rounded-xl shadow-sm hover:shadow-md transition bg-white"
+      data-aos="zoom-in" data-aos-delay="150">
+
+      <div class="flex items-center gap-4 mb-6">
+        <div class="text-blue-600 text-4xl">
+          <i class="fa-solid fa-envelope-open-text"></i>
+        </div>
+        <div>
+          <p class="text-gray-500 text-sm">Drop A Line</p>
+          <h3 class="text-xl font-semibold text-blue-600">Mail Information</h3>
+        </div>
+      </div>
+
+      <div class="border-b border-blue-500 w-1/3 mb-4"></div>
+
+      <a href="mailto:info@projiment.com" class="text-gray-600 hover:text-[#1a73e8]">info@projiment.com</a>
+
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="p-8 border rounded-xl shadow-sm hover:shadow-md transition bg-white"
+      data-aos="zoom-in" data-aos-delay="300">
+
+      <div class="flex items-center gap-4 mb-6">
+        <div class="text-blue-600 text-4xl">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div>
+          <p class="text-gray-500 text-sm">Address</p>
+          <h3 class="text-xl font-semibold text-blue-600">Our Location</h3>
+        </div>
+      </div>
+
+      <div class="border-b border-blue-500 w-1/3 mb-4"></div>
+
+      <p  class="text-gray-600">Your address goes here</p>
+      <p class="text-gray-600">Egypt, Giza  </p>
+
+    </div>
+
+  </div>
+
+  <!-- MAP + FORM -->
+  <div class="container-bs mt-20 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 px-6">
+
+    <!-- LEFT SIDE — MAP -->
+    <div class="w-full h-[500px]" data-aos="fade-right">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.594735209908!2d31.1476023!3d29.991074799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145845cec2eb62f7%3A0x3ce928c9626b91cb!2z2LTYsdmD2Kkg2KjYsdmI2KzZitmF2YbYqiDZhNmE2K7Yr9mF2KfYqiDZiCDYp9mE2KfYs9iq2LTYp9ix2KfYqnwgUHJvamltZW50IFNlcnZpY2VzIGFuZCBjb25zdWx0aW5n!5e0!3m2!1sar!2seg!4v1766792106018!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- RIGHT SIDE — FORM -->
+    <div data-aos="fade-left">
+      <p class="text-sm text-gray-500 font-semibold tracking-wide">MAKE CUSTOM REQUEST</p>
+
+      <h2 class="text-4xl font-bold text-blue-700 mb-10">
+       How We Can Help
+      </h2>
+
+      <form class="space-y-6">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <input type="text" placeholder="First Name"
+            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none">
+
+          <input type="text" placeholder="Last Name"
+            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none">
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <input type="email" placeholder="Email"
+            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none">
+
+          <input type="text" placeholder="Subject"
+            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none">
+        </div>
+
+        <textarea placeholder="Message" rows="6"
+          class="w-full border border-gray-300 rounded-md px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+
+        <button
+          class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-md">
+          Send Message
+        </button>
+
+      </form>
+    </div>
+  </div>
+</section>
+  </main>
+ <!--javaScript-->
+ <script src="../Javascript/Main.js"></script>
+
+</body>
+</html>
