@@ -293,38 +293,41 @@
        How We Can Help
       </h2>
 
-      <form class="space-y-6">
+   <form id="contact-form" class="space-y-6" >
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <input type="text" placeholder="First Name"
-            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <input type="text" name="first_name" placeholder="First Name" required
+      class="w-full border border-gray-300 rounded-md px-4 py-3">
+      
+    <input type="text" name="last_name" placeholder="Last Name" required
+      class="w-full border border-gray-300 rounded-md px-4 py-3">
+  </div>
 
-          <input type="text" placeholder="Last Name"
-            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none">
-        </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <input type="email" name="email" placeholder="Email" required
+      class="w-full border border-gray-300 rounded-md px-4 py-3">
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <input type="email" placeholder="Email"
-            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none">
+    <input type="text" name="subject" placeholder="Subject" required
+      class="w-full border border-gray-300 rounded-md px-4 py-3">
+  </div>
 
-          <input type="text" placeholder="Subject"
-            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none">
-        </div>
+  <textarea name="message" rows="6" placeholder="Message" required
+    class="w-full border border-gray-300 rounded-md px-4 py-3"></textarea>
 
-        <textarea placeholder="Message" rows="6"
-          class="w-full border border-gray-300 rounded-md px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+  <button type="submit"
+    class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-md">
+    Send Message
+  </button>
 
-        <button
-          class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-md">
-          Send Message
-        </button>
+</form>
 
-      </form>
     </div>
   </div>
 </section>
   </main>
  <!--javaScript-->
+ <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
  <script src="../Javascript/Main.js"></script>
 
 </body>
