@@ -1,0 +1,6 @@
+
+User-agent: *
+Disallow:
+
+# رابط خريطة الموقع (اختياري، لو عندك sitemap)
+Sitemap: https://projiment.com/sitemap.xml
