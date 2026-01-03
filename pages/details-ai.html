@@ -16,14 +16,16 @@
     <link rel="stylesheet" href="../Css/styles.css">
 </head>
 <body>
-   <header class="sticky top-0 z-50 bg-white shadow-sm py-4 md:py-6 ">
+<header class="sticky top-0 z-50 bg-white shadow-sm py-4 md:py-6 ">
     <div class="container-bs flex items-center justify-between px-4 sm:px-6 lg:px-0">
 
       <!-- Logo -->
       <div class="flex items-center space-x-2">
-        <a href="index.html" class="flex-shrink-0">
-          <img src="../images/logo.webp" alt="Projiment logo"
-            class="h-11 sm:h-13 md:h-14 w-auto" width="180" height="56" />
+        <a href="../index.html" class="flex-shrink-0">
+          <img src="../images/logo.webp" alt="Projiment logo" width="160" height="56"
+            class="h-11 sm:h-13 md:h-14 w-auto">
+
+
         </a>
         <p class="text-2xl font-bold leading-tight">
           Projiment
@@ -40,8 +42,7 @@
 
         <!-- HR Services Dropdown (Desktop) -->
         <div class="group relative">
-          <a class="text-[#444] hover:text-[#1a73e8] font-medium transition flex items-center"
-            href="services.html">
+          <a class="text-[#444] hover:text-[#1a73e8] font-medium transition flex items-center" href="services.html">
             HR Services
             <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -50,44 +51,45 @@
 
           <div class="absolute left-0 top-8 w-48 bg-white shadow-lg rounded-md py-3 opacity-0 invisible 
                     group-hover:opacity-100 group-hover:visible transition-all duration-200">
-            <a href="pages/details-services.html?service=recruitment"
+            <a href="details-services.html?hr=recruitment"
               class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
               Recruitment Services
             </a>
-            <a href="pages/details-services.html?service=social-insurance"
-              class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Training & Development</a>
-            <a href="pages/details-services.html?service=payroll"
+
+            <a href="details-services.html?hr=payroll"
               class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Payroll Management</a>
-            <a href="pages/details-services.html?service=social-insurance"
+            <a href="details-services.html?hr=social-insurance"
               class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Social insurance & Laor Offies
               Handling</a>
-            <a href="pages/details-services.html?service=personnel-affairs"
+            <a href="details-services.html?hr=personnel-affairs"
               class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
               Personnel Affairs Services
             </a>
-            <a href="pages/details-services.html?service=organizational-development"
+            <a href="details-services.html?hr=organizational-development"
               class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
               Organizations Development
             </a>
-            <a href="pages/details-services.html?service=hr-consulting"
+            <a href="details-services.html?hr=hr-consulting"
               class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
               HR Audting Services
             </a>
-            <a href="pages/details-services.html?service=hr-consulting"
+            <a href="details-services.html?hr=hr-consulting"
               class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">
               Humen Resources Consulting
             </a>
           </div>
         </div>
 
-        <a href="../pages/accounting.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Accounting</a>
-        <a href="../pages/financial.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Financial
+        <a href="accounting.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Accounting</a>
+        <a href="financial.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Financial
           Advisory</a>
-        <a href="../pages/ai-solutation.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">
+        <a href="ai-solutation.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">
           AI Solutions </a>
-        <a href="../pages/clients.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Our Clients</a>
-        <a href="../pages/about.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">About us</a>
-        <a href="../pages/contact.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Contact us</a>
+        <a href="clients.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Our Clients</a>
+
+        <a href="about.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">About us</a>
+
+        <a href="contact.html" class="text-[#444] hover:text-[#1a73e8] font-medium transition">Contact us</a>
 
       </nav>
 
@@ -115,7 +117,7 @@
       <ul class="flex flex-col text-[#444] mt-4">
 
         <li class="border-b p-4 hover:text-[#1a73e8] transition">
-          <a href="../index.html">Home</a>
+          <a href="index.html">Home</a>
         </li>
 
         <!-- HR Dropdown (Mobile) -->
@@ -130,22 +132,21 @@
           </button>
 
           <ul id="mobile-hr-menu" class="hidden flex-col pl-6  mt-2 rounded-md">
-            <li><a href="./pages/details-services.html?service=recruitment"
+            <li><a href="details-services.html?hr=recruitment"
                 class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Recruitment</a></li>
-            <li><a href="./pages/details-services.html?service=social-insurance"
-                class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Training & Development</a></li>
-            <li><a href="./pages/details-services.html?service=payroll"
+
+            <li><a href="details-services.html?hr=payroll"
                 class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Payroll Management</a></li>
-            <li><a href="./pages/details-services.html?service=social-insurance"
+            <li><a href="details-services.html?hr=social-insurance"
                 class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Social insurance & Laor Offies
                 Handling</a></li>
-            <li><a href="./pages/details-services.html?service=personnel-affairs"
+            <li><a href="details-services.html?hr=personnel-affairs"
                 class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Personnel Affairs Services</a></li>
-            <li><a href="./pages/details-services.html?service=organizational-development"
+            <li><a href="details-services.html?hr=organizational-development"
                 class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Organizations Development</a></li>
-            <li><a href="./pages/details-services.html?service=hr-audting"
+            <li><a href="details-services.html?hr=hr-audting"
                 class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">HR Audting Services</a></li>
-            <li><a href="./pages/details-services.html?service=hr-consulting"
+            <li><a href="details-services.html?hr=hr-consulting"
                 class="block px-4 py-2 text-sm text-[#444] hover:text-[#1a73e8]">Humen Resources Consulting</a></li>
 
           </ul>
@@ -155,13 +156,13 @@
 
         <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="financial.html">Financial Advisory</a>
         </li>
-        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="ai-solutation.html"> Ai Solutions </a>
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="ai-solutation.html"> AI Solutions </a>
         </li>
 
 
         <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="clients.html">Our Clients</a></li>
         <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="about.html">About us</a></li>
-        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="contact.html">Contact us</a></li>
+        <li class="border-b p-4 hover:text-[#1a73e8] transition"><a href="./pages/contact.html">Contact us</a></li>
 
       </ul>
     </div>
