@@ -1,3 +1,7 @@
+@font-face {
+  font-display: swap;
+}
+
 
 /* Bootstrap Container equivalent in Tailwind custom CSS */
 .container-bs {
