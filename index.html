@@ -209,24 +209,25 @@
 
 <section class="relative w-full h-[85vh] md:h-screen overflow-hidden">
 
+
   <div id="slider" class="relative w-full h-full">
 
-    <!-- ================= SLIDE 1 (LCP) ================= -->
+    <!-- ================= SLIDE 1 ================= -->
     <div class="slide absolute inset-0 opacity-100 transition-opacity duration-1000">
-
       <img
         src="images/slide1_11zon.webp"
+        class="w-full h-full object-cover"
         alt="Business partnership meeting"
         width="1280"
         height="720"
-        fetchpriority="high"
         loading="eager"
+        fetchpriority="high"
         decoding="async"
-        class="w-full h-full object-cover"
+  
       />
-
       <div class="absolute inset-0 bg-black/55"></div>
 
+      <!-- Content -->
       <div class="absolute inset-0 flex items-center">
         <div class="max-w-7xl mx-auto px-6 w-full">
           <div class="max-w-xl text-white">
@@ -254,20 +255,21 @@
     </div>
 
     <!-- ================= SLIDE 2 ================= -->
-    <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 hidden md:block">
-
+    <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
       <img
         src="images/slaide2_11zon.webp"
+        class="w-full h-full object-cover"
         alt="Team collaboration office"
         width="1280"
         height="720"
         loading="lazy"
         decoding="async"
-        class="w-full h-full object-cover"
-      />
+      
 
+      />
       <div class="absolute inset-0 bg-black/55"></div>
 
+      <!-- Content -->
       <div class="absolute inset-0 flex items-center">
         <div class="max-w-7xl mx-auto px-6 w-full">
           <div class="max-w-xl text-white">
@@ -295,20 +297,20 @@
     </div>
 
     <!-- ================= SLIDE 3 ================= -->
-    <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 hidden md:block">
-
+    <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
       <img
         src="images/slaide3_11zon.webp"
+        class="w-full h-full object-cover"
+        loading="lazy"
+        decoding="async"
         alt="Executive discussion boardroom"
         width="1280"
         height="720"
-        loading="lazy"
-        decoding="async"
-        class="w-full h-full object-cover"
-      />
 
+      />
       <div class="absolute inset-0 bg-black/55"></div>
 
+      <!-- Content -->
       <div class="absolute inset-0 flex items-center">
         <div class="max-w-7xl mx-auto px-6 w-full">
           <div class="max-w-xl text-white">
@@ -337,15 +339,14 @@
 
   </div>
 
-  <!-- ================= DOTS (Desktop only) ================= -->
-  <div class="hidden md:flex absolute bottom-10 left-1/2 -translate-x-1/2 gap-4 z-20">
+  <!-- ================= DOT NAVIGATION ================= -->
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-4 z-20">
     <button class="dot w-3 h-3 rounded-full bg-white" data-slide="0" aria-label="Go to slide 1"></button>
     <button class="dot w-3 h-3 rounded-full bg-white/40" data-slide="1" aria-label="Go to slide 2"></button>
-    <button class="dot w-3 h-3 rounded-full bg-white/40" data-slide="2"></button>
+    <button class="dot w-3 h-3 rounded-full bg-white/40" data-slide="2" aria-label="Go to slide 3"></button>
   </div>
 
 </section>
-
 
 
 
