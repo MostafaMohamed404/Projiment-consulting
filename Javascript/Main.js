@@ -1,35 +1,5 @@
+// ================= GLOBAL DOM READY =================
 window.addEventListener("DOMContentLoaded", () => {
-  // ===== Carousel =====
-  const slides = document.querySelectorAll(".slide");
-  const dots = document.querySelectorAll(".dot");
-  let current = 0;
-
-  function showSlide(i) {
-    slides.forEach((s, idx) => (s.style.opacity = idx === i ? "1" : "0"));
-    dots.forEach((d, idx) => {
-      d.className =
-        idx === i
-          ? "dot w-3 h-3 rounded-full bg-white"
-          : "dot w-3 h-3 rounded-full bg-white/40";
-    });
-  }
-
-  if (slides.length > 0 && dots.length > 0) {
-    showSlide(0);
-
-    dots.forEach((d) => {
-      d.addEventListener("click", () => {
-        current = +d.dataset.slide;
-        showSlide(current);
-      });
-    });
-
-    setInterval(() => {
-      current = (current + 1) % slides.length;
-      showSlide(current);
-    }, 6000);
-  }
-
   // ===== AOS Initialization =====
   if (typeof AOS !== "undefined") {
     AOS.init({
@@ -43,14 +13,13 @@ window.addEventListener("DOMContentLoaded", () => {
   // ===== FAQ Accordion =====
   const faqItems = document.querySelectorAll(".faq-item");
   faqItems.forEach((item) => {
-    const header = item.querySelector("h3");
     const plusIcon = item.querySelector(".plus");
     const minusIcon = item.querySelector(".minus");
     const answer = item.querySelector(".faq-answer");
 
     item.addEventListener("click", () => {
       const isOpen = !answer.classList.contains("hidden");
-      // Close all
+
       faqItems.forEach((i) => {
         i.querySelector(".faq-answer").classList.add("hidden");
         i.querySelector(".plus").classList.remove("hidden");
@@ -105,6 +74,84 @@ window.addEventListener("DOMContentLoaded", () => {
       hrMenu.classList.toggle("hidden");
     });
   }
+});
+
+
+
+window.addEventListener("load", () => {
+  const slides = document.querySelectorAll(".slide");
+  const slider = document.getElementById("slider");
+  const lcpImage = document.getElementById("lcpImage");
+
+  const tag = document.getElementById("slideTag");
+  const title = document.getElementById("slideTitle");
+  const text = document.getElementById("slideText");
+  const btn = document.getElementById("slideBtn");
+
+  if (!slides.length) return;
+
+  const content = [
+    {
+      tag: "Business Partnerships",
+      title: "Building Trusted<br />Business Partnerships",
+      text:
+        "We support organizations in forming strong partnerships and long-term collaborations that create real value.",
+      link: "./pages/contact.html",
+    },
+    {
+      tag: "Advisory Collaboration",
+      title: "Working Closely<br />With Leadership Teams",
+      text:
+        "Our consultants collaborate side by side with decision-makers to align goals, strategy, and execution.",
+      link: "./pages/contact.html",
+    },
+    {
+      tag: "Executive Consulting",
+      title: "Aligning People,<br />Strategy & Growth",
+      text:
+        "We help executive teams strengthen cooperation, accelerate growth, and build resilient organizations.",
+      link: "./pages/contact.html",
+    },
+  ];
+
+  let current = 0;
+
+  // show slider + hide LCP image
+  slider.style.opacity = "1";
+  lcpImage.style.opacity = "0";
+
+  function updateContent(i) {
+    tag.textContent = content[i].tag;
+
+    title.style.opacity = "0";
+    text.style.opacity = "0";
+
+    setTimeout(() => {
+      title.innerHTML = content[i].title;
+      text.textContent = content[i].text;
+      btn.href = content[i].link;
+
+      title.style.opacity = "1";
+      text.style.opacity = "1";
+    }, 200);
+  }
+
+  updateContent(0);
+
+  setInterval(() => {
+    const next = (current + 1) % slides.length;
+
+    // 👈 اعرض الصورة الجديدة الأول
+    slides[next].style.opacity = "1";
+
+    // 👈 وبعدها اخفي القديمة
+    setTimeout(() => {
+      slides[current].style.opacity = "0";
+      current = next;
+      updateContent(current);
+    }, 300);
+
+  }, 5000);
 });
 
 document.addEventListener("DOMContentLoaded", () => {

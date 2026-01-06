@@ -47,7 +47,19 @@
 
   <!-- Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
- 
+   <!-- Preload images -->
+  <link
+  rel="preload"
+  as="image"
+  href="images/slide1_11zon.webp"
+  imagesrcset="
+    images/slide1_11zon.webp 768w,
+    images/slide1_11zon.webp 1920w
+  "
+  imagesizes="100vw"
+/>
+
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -205,146 +217,112 @@
   <!-- HERO SECTION -->
   <main>
 
-<section class="relative w-full h-[85vh] md:h-screen overflow-hidden">
+<section class="relative w-full min-h-screen overflow-hidden bg-black">
 
+  <!-- ================= LCP IMAGE (STATIC) ================= -->
+  <img
+    id="lcpImage"
+    src="images/slide1_11zon.webp"
+    srcset="
+      images/slide1_11zon.webp 768w,
+      images/slide1_11zon.webp 1920w
+    "
+    sizes="100vw"
+    alt="Business partnership meeting between consulting professionals"
+    class="absolute inset-0 w-full h-full object-cover z-0"
+    fetchpriority="high"
+    decoding="async"
+    width="1920"
+    height="1080"
+  />
 
-  <div id="slider" class="relative w-full h-full">
+  <!-- ================= SLIDER ================= -->
+  <div
+    id="slider"
+    class="absolute inset-0 z-10 opacity-0 transition-opacity duration-700"
+  >
 
-    <!-- ================= SLIDE 1 ================= -->
+    <!-- Slide 1 -->
     <div class="slide absolute inset-0 opacity-100 transition-opacity duration-1000">
       <img
         src="images/slide1_11zon.webp"
         class="w-full h-full object-cover"
-        alt="Business partnership meeting"
-        width="1280"
-        height="720"
-        loading="eager"
-        fetchpriority="high"
+        alt=""
+        loading="lazy"
         decoding="async"
-  
       />
-      <div class="absolute inset-0 bg-black/55"></div>
-
-      <!-- Content -->
-      <div class="absolute inset-0 flex items-center">
-        <div class="max-w-7xl mx-auto px-6 w-full">
-          <div class="max-w-xl text-white">
-            <span class="uppercase tracking-widest text-gray-300 text-sm">
-              Business Partnerships
-            </span>
-
-            <h1 class="text-4xl md:text-5xl font-bold mt-4 mb-6 leading-tight">
-              Building Trusted<br />Business Partnerships
-            </h1>
-
-            <p class="text-lg text-gray-200 mb-8">
-              We support organizations in forming strong partnerships and long-term collaborations that create real value.
-            </p>
-
-            <a
-              href="pages/contact.html"
-              class="inline-block bg-blue-900 hover:bg-blue-800 px-8 py-3 rounded-2xl font-semibold"
-            >
-              Start Conversation
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <!-- ================= SLIDE 2 ================= -->
+    <!-- Slide 2 -->
     <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
       <img
         src="images/slaide2_11zon.webp"
         class="w-full h-full object-cover"
         alt="Team collaboration office"
-        width="1280"
-        height="720"
         loading="lazy"
-       
-      
-
+        decoding="async"
       />
-      <div class="absolute inset-0 bg-black/55"></div>
-
-      <!-- Content -->
-      <div class="absolute inset-0 flex items-center">
-        <div class="max-w-7xl mx-auto px-6 w-full">
-          <div class="max-w-xl text-white">
-            <span class="uppercase tracking-widest text-gray-300 text-sm">
-              Advisory Collaboration
-            </span>
-
-            <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6">
-              Working Closely<br />With Leadership Teams
-            </h2>
-
-            <p class="text-lg text-gray-200 mb-8">
-              Our consultants collaborate side by side with decision-makers to align goals, strategy, and execution.
-            </p>
-
-            <a
-              href="./pages/contact.html"
-              class="inline-block bg-blue-900 hover:bg-blue-800 px-8 py-3 rounded-2xl font-semibold"
-            >
-              Start Conversation
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <!-- ================= SLIDE 3 ================= -->
+    <!-- Slide 3 -->
     <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
       <img
         src="images/slaide3_11zon.webp"
         class="w-full h-full object-cover"
-        loading="lazy"
-       
         alt="Executive discussion boardroom"
-        width="1280"
-        height="720"
-
+        loading="lazy"
+        decoding="async"
       />
-      <div class="absolute inset-0 bg-black/55"></div>
-
-      <!-- Content -->
-      <div class="absolute inset-0 flex items-center">
-        <div class="max-w-7xl mx-auto px-6 w-full">
-          <div class="max-w-xl text-white">
-            <span class="uppercase tracking-widest text-gray-300 text-sm">
-              Executive Consulting
-            </span>
-
-            <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6">
-              Aligning People,<br />Strategy & Growth
-            </h2>
-
-            <p class="text-lg text-gray-200 mb-8">
-              We help executive teams strengthen cooperation, accelerate growth, and build resilient organizations.
-            </p>
-
-            <a
-              href="./pages/contact.html"
-              class="inline-block bg-blue-900 hover:bg-blue-800 px-8 py-3 rounded-2xl font-semibold"
-            >
-              Start Conversation
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
 
   </div>
 
-  <!-- ================= DOT NAVIGATION ================= -->
-  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-4 z-20">
-    <button class="dot w-3 h-3 rounded-full bg-white" data-slide="0" aria-label="Go to slide 1"></button>
-    <button class="dot w-3 h-3 rounded-full bg-white/40" data-slide="1" aria-label="Go to slide 2"></button>
-    <button class="dot w-3 h-3 rounded-full bg-white/40" data-slide="2" aria-label="Go to slide 3"></button>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/55 z-20"></div>
+
+  <!-- ================= CONTENT ================= -->
+ <!-- ================= CONTENT ================= -->
+<div class="relative z-30 flex items-center min-h-screen">
+  <div class="max-w-7xl mx-auto px-6 w-full">
+    <div class="max-w-xl text-white">
+
+      <span
+        id="slideTag"
+        class="uppercase tracking-widest text-gray-300 text-sm"
+      >
+        Business Partnerships
+      </span>
+
+      <h1
+        id="slideTitle"
+        class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight transition-opacity duration-500"
+      >
+        Building Trusted<br />Business Partnerships
+      </h1>
+
+      <p
+        id="slideText"
+        class="text-lg text-gray-200 mb-8 transition-opacity duration-500"
+      >
+        We support organizations in forming strong partnerships and
+        long-term collaborations that create real value.
+      </p>
+
+      <a
+        id="slideBtn"
+        href="./pages/contact.html"
+        class="inline-block bg-blue-900 hover:bg-blue-800 px-8 py-3 rounded-2xl font-semibold transition"
+      >
+        Start Conversation
+      </a>
+
+    </div>
   </div>
+</div>
+
 
 </section>
+
 
 
 
