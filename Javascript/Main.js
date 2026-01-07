@@ -199,26 +199,20 @@ counters.forEach((counter) => {
  
 
 
+  emailjs.init("j3E0kfIbAlK8BxBi--TKP"); // حط User ID من EmailJS
 
-document.addEventListener("DOMContentLoaded", function() {
-  emailjs.init("UBe2G3JQms6LOgA_p");
+  const form = document.getElementById("contact-form");
+  const formMessage = document.getElementById("form-message");
 
-  document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault();
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
 
-    emailjs.sendForm(
-      "service_5j497td",
-      "template_4cvokhc",
-      this
-    ).then(
-      function () {
-        alert("✅ Message sent successfully!");
-        document.getElementById("contact-form").reset();
-      },
-      function (error) {
-        console.error("EmailJS Error:", error);
-        alert("❌ Failed to send message. Check console.");
-      }
-    );
+    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+      .then(() => {
+        formMessage.textContent = "Message sent successfully!";
+        form.reset();
+      }, (error) => {
+        formMessage.textContent = "Oops! Something went wrong. Please try again.";
+        console.error("EmailJS error:", error);
+      });
   });
-});
