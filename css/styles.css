@@ -73,9 +73,9 @@
   border: 0;
 }
 
-/* Responsive image utilities to prevent layout shift and overflow */
-.responsive-img,
-img {
+
+/* Responsive images (opt-in only) */
+.responsive-img {
   max-width: 100%;
   height: auto;
   display: block;
